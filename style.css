@@ -1,58 +1,25 @@
-header {
-    background-image: url('Bilder/header1.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    color: white;
+/* --- Navigation --- */
+.main-nav {
+    width: 100%;
+    background: #222;        /* dunkler Balken */
+    padding: 12px 0;
     text-align: center;
-    padding-top: 40px;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    gap: 25px;               /* Abstand zwischen Links */
 }
 
-header {
-    background: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
+.main-nav a {
+    color: #fff;             /* weiße Schrift */
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.25s ease;
 }
 
-.hero {
-    background: #333;
-    color: white;
-    padding: 40px;
-    text-align: center;
+.main-nav a:hover {
+    background: #444;        /* Hover-Effekt */
+    color: #ffcc00;          /* goldener Akzent */
 }
-
-.content {
-    padding: 20px;
-}
-
-footer {
-    opacity: 0.75;
-    font-size: 0.85em;
-    text-align: center;
-    margin-top: 40px;
-}
-
-footer a {
-    color: #666;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-
