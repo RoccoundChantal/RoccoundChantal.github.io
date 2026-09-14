@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     gap: 25px;               /* Abstand zwischen Links */
+    .main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .main-nav a {
