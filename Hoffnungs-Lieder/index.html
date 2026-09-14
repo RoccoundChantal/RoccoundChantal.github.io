@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Hoffnungs‑Lieder</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            padding: 20px;
+<meta charset="UTF-8">
+<title>Hoffnungs‑Lieder</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px; /* sehr enger Abstand */
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .song {
+        background: #fff;
+        padding: 6px;
+        border-radius: 6px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    }
+
+    .song strong {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    audio {
+        width: 100%;
+        height: 28px; /* kompakter Player */
+    }
+
+    @media (max-width: 700px) {
+        .grid {
+            grid-template-columns: 1fr; /* Handy: 1 Spalte */
         }
-        h1 {
-            color: #333;
-        }
-        .song {
-            margin-bottom: 20px;
-            padding: 10px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        audio {
-            width: 100%;
-            margin-top: 10px;
-        }
-    </style>
+    }
+</style>
 </head>
+
 <body>
 
 <h1>Hoffnungs‑Lieder</h1>
-<p>Hier kannst du alle Songs direkt anhören:</p>
 
-<div class="song">
-    <strong>Alles was ich bin</strong>
-    <audio controls src="Alles was ich bin.mp3"></audio>
-</div>
+<div class="grid">
 
-<div class="song">
-    <strong>Babylon du große Stadt</strong>
-    <audio controls src="Babylon du große Stadt.mp3"></audio>
-</div>
+    <div class="song">
+        <strong>Alles was ich bin</strong>
+        <audio controls src="Alles was ich bin.mp3"></audio>
+    </div>
 
-<div class="song">
-    <strong>Dein Geist berührt mich</strong>
-    <audio controls src="Dein Geist berührt mich.mp3"></audio>
-</div>
+    <div class="song">
+        <strong>Babylon du große Stadt</strong>
+        <audio controls src="Babylon du große Stadt.mp3"></audio>
+    </div>
 
-<div class="song">
-    <strong>Die Neue Welt</strong>
-    <audio controls src="Die Neue Welt.mp3"></audio>
-</div>
+    <div class="song">
+        <strong>Dein Geist berührt mich</strong>
+        <audio controls src="Dein Geist berührt mich.mp3"></audio>
+    </div>
 
-<div class="song">
-    <strong>Die Wahrheit brennt – F (Remake)</strong>
-    <audio controls src="Die Wahrheit brennt_F, Remake.mp3"></audio>
-</div>
+    <div class="song">
+        <strong>Die Neue Welt</strong>
+        <audio controls src="Die Neue Welt.mp3"></audio>
+    </div>
 
-<div class="song">
-    <strong>Die Wahrheit brennt – M</strong>
-    <audio controls src="Die Wahrheit brennt_M.mp3"></audio>
-</div>
-
-<div class="song">
-    <strong>Du darfst das verstehn</strong>
-    <audio controls src="Du darfst das verstehn.mp3"></audio>
-</div>
-
-<div class="song">
-    <strong>Du gibst Hoffnung</strong>
-    <audio controls src="Du gibst Hoffnung.mp3"></audio>
-</div>
-
-<div class="song">
-    <strong>Durch deinen Sohn</strong>
-    <audio controls src="Durch deinen Sohn.mp3"></audio>
-</div>
-
-</body>
-</html>
+    <div class="song">
+        <strong>Die Wahrheit brennt – F (Remake)</strong>
