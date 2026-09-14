@@ -59,3 +59,25 @@ body {
 .content a:hover {
     text-decoration: underline;
 }
+/* --- Mobile Navigation --- */
+@media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;   /* Links untereinander */
+        gap: 10px;                /* Weniger Abstand */
+        padding: 15px 0;
+    }
+
+    .main-nav a {
+        font-size: 20px;          /* Größere Schrift für Handy */
+        padding: 12px 18px;       /* Größere Klickfläche */
+        width: 90%;               /* Breite Buttons */
+        margin: 0 auto;           /* Zentriert */
+        background: #333;         /* leichte Hintergrundfarbe */
+        border-radius: 6px;
+    }
+
+    .main-nav a:hover {
+        background: #555;
+        color: #ffcc00;
+    }
+}
