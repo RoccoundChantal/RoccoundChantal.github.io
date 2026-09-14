@@ -1,19 +1,18 @@
-/* --- Navigation --- */
 .main-nav {
     width: 100%;
-    background: #222;        /* dunkler Balken */
+    background: #222;
     padding: 12px 0;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 25px;               /* Abstand zwischen Links */
+    gap: 25px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .main-nav a {
-    color: #fff;             /* weiße Schrift */
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -23,11 +22,10 @@
 }
 
 .main-nav a:hover {
-    background: #444;        /* Hover-Effekt */
-    color: #ffcc00;          /* goldener Akzent */
+    background: #444;
+    color: #ffcc00;
 }
 
-/* --- Grundlayout --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -61,20 +59,19 @@ body {
     text-decoration: underline;
 }
 
-/* --- Mobile Navigation --- */
 @media (max-width: 600px) {
     .main-nav {
-        flex-direction: column;   /* Links untereinander */
-        gap: 10px;                /* Weniger Abstand */
+        flex-direction: column;
+        gap: 10px;
         padding: 15px 0;
     }
 
     .main-nav a {
-        font-size: 20px;          /* Größere Schrift für Handy */
-        padding: 12px 18px;       /* Größere Klickfläche */
-        width: 90%;               /* Breite Buttons */
-        margin: 0 auto;           /* Zentriert */
-        background: #333;         /* leichte Hintergrundfarbe */
+        font-size: 20px;
+        padding: 12px 18px;
+        width: 90%;
+        margin: 0 auto;
+        background: #333;
         border-radius: 6px;
     }
 
