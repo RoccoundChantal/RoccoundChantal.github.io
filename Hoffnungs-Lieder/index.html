@@ -2,142 +2,98 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>Hoffnungs‑Lieder</title>
+<title>Hoffnungs‑Lieder – Spotify‑Style</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        display: flex;
-    }
-
-    /* Sidebar */
-    .sidebar {
-        width: 220px;
-        background: linear-gradient(180deg, #222, #111);
-        color: white;
-        height: 100vh;
-        padding: 25px 15px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        box-shadow: 3px 0 10px rgba(0,0,0,0.3);
-    }
-
-    .sidebar h2 {
-        font-size: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .sidebar a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        margin-bottom: 10px;
-        background: #333;
-        border-radius: 6px;
-        font-size: 15px;
-        transition: 0.2s;
-    }
-
-    .sidebar a:hover {
-        background: #444;
-        transform: translateX(4px);
-    }
-
-    /* Icons */
-    .icon {
-        font-size: 18px;
-    }
-
-    /* Content */
-    .content {
-        margin-left: 240px;
-        padding: 25px;
-        width: calc(100% - 240px);
-    }
-
-    h1 {
-        margin-top: 0;
-        margin-bottom: 15px;
-        font-size: 26px;
-        color: #222;
-    }
-
-    p {
-        margin-bottom: 20px;
-        font-size: 15px;
-        color: #444;
-    }
-
-    /* MP3 Grid */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        max-width: 1000px;
-    }
-
-    .song {
-        background: white;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 0 6px rgba(0,0,0,0.1);
-        transition: 0.2s;
-    }
-
-    .song:hover {
-        transform: scale(1.02);
-    }
-
-    .song strong {
-        font-size: 15px;
-        display: block;
-        margin-bottom: 6px;
-        color: #222;
-    }
-
-    audio {
-    width: 100%;
-    height: 30px;
-    overflow: hidden;
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
-    @media (max-width: 700px) {
-        body {
-            flex-direction: column;
-        }
-        .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-        .content {
-            margin-left: 0;
-            width: 100%;
-        }
-        .grid {
-            grid-template-columns: 1fr;
-        }
-    }
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Player-Design */
+.player {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+}
+
+.cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-ring {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.progress-ring svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+circle.bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 4;
+}
+
+circle.progress {
+    fill: none;
+    stroke: #1db954; /* Spotify-Grün */
+    stroke-width: 4;
+    stroke-dasharray: 163;
+    stroke-dashoffset: 163;
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: #1db954;
+}
+
+.title {
+    font-size: 15px;
+    color: #222;
+}
 </style>
 </head>
 
 <body>
+<h1>Hoffnungs‑Lieder</h1>
 
-<div class="sidebar">
-    <h2>Navigation</h2>
-
-    <a href="../index.html">
-        <div class="player">
+<!-- Beispiel-Player -->
+<div class="player">
     <img src="cover.jpg" class="cover">
-
     <div class="controls">
         <div class="progress-ring" data-song="Alles was ich bin.mp3">
             <svg width="60" height="60">
@@ -146,10 +102,54 @@
             </svg>
             <div class="play-btn">▶</div>
         </div>
-
         <div class="title">Alles was ich bin</div>
     </div>
-
     <audio src="Alles was ich bin.mp3"></audio>
 </div>
 
+<!-- Weitere Songs kannst du einfach kopieren -->
+<div class="player">
+    <img src="cover.jpg" class="cover">
+    <div class="controls">
+        <div class="progress-ring" data-song="Babylon du große Stadt.mp3">
+            <svg width="60" height="60">
+                <circle class="bg" cx="30" cy="30" r="26"></circle>
+                <circle class="progress" cx="30" cy="30" r="26"></circle>
+            </svg>
+            <div class="play-btn">▶</div>
+        </div>
+        <div class="title">Babylon du große Stadt</div>
+    </div>
+    <audio src="Babylon du große Stadt.mp3"></audio>
+</div>
+
+<script>
+document.querySelectorAll('.player').forEach(player => {
+    const audio = player.querySelector('audio');
+    const ring = player.querySelector('.progress');
+    const playBtn = player.querySelector('.play-btn');
+
+    playBtn.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            playBtn.textContent = "❚❚";
+        } else {
+            audio.pause();
+            playBtn.textContent = "▶";
+        }
+    });
+
+    audio.addEventListener('timeupdate', () => {
+        const progress = audio.currentTime / audio.duration;
+        ring.style.strokeDashoffset = 163 - (163 * progress);
+    });
+
+    audio.addEventListener('ended', () => {
+        playBtn.textContent = "▶";
+        ring.style.strokeDashoffset = 163;
+    });
+});
+</script>
+
+</body>
+</html>
