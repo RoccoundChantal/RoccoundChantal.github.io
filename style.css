@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     gap: 25px;               /* Abstand zwischen Links */
-    .main-nav {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -27,6 +26,8 @@
     background: #444;        /* Hover-Effekt */
     color: #ffcc00;          /* goldener Akzent */
 }
+
+/* --- Grundlayout --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -59,6 +60,7 @@ body {
 .content a:hover {
     text-decoration: underline;
 }
+
 /* --- Mobile Navigation --- */
 @media (max-width: 600px) {
     .main-nav {
@@ -81,3 +83,4 @@ body {
         color: #ffcc00;
     }
 }
+
