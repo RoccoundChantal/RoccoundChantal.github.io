@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
-<header>
-    <img src="header1.jpg" alt="Rocco & Chantal Header" style="width:100%; max-height:300px; object-fit:cover;">
-
-    <button onclick="document.getElementById('player').scrollIntoView({behavior:'smooth'});" 
-            style="padding:12px 20px; font-size:18px; background:#444; color:white; border:none; border-radius:6px; cursor:pointer; margin-top:15px;">
-        Musikplayer öffnen
-    </button>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <title>Rocco & Chantal – Musik & Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
@@ -24,15 +21,24 @@
     </ul>
 </aside>
 
-<nav>
-    <ul>
-        <li><a href="Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
-        <li><a href="Klassik/index.html">Klassik</a></li>
-        <li><a href="Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-    </ul>
-</nav>
+<header>
+    <img src="header1.jpg" alt="Rocco & Chantal Header" style="width:100%; max-height:300px; object-fit:cover;">
+
+    <!-- Musikplayer Button -->
+    <button onclick="document.getElementById('player').scrollIntoView({behavior:'smooth'});" 
+            style="padding:12px 20px; font-size:18px; background:#444; color:white; border:none; border-radius:6px; cursor:pointer; margin-top:15px;">
+        Musikplayer öffnen
+    </button>
+</header>
+
+<!-- Moderne Shop-Buttons unter dem Header -->
+<div class="category-buttons">
+    <a href="Hoffnungs-Lieder/" class="cat-btn">Hoffnungs‑Lieder</a>
+    <a href="Klassik/" class="cat-btn">Klassik</a>
+    <a href="Sonstige-Lieder/" class="cat-btn">Sonstige Lieder</a>
+    <a href="Shop/" class="cat-btn">Shop</a>
+    <a href="Bilder/" class="cat-btn">Bilder</a>
+</div>
 
 <section id="player">
     <h2>Musikplayer</h2>
@@ -49,10 +55,15 @@
 </main>
 
 <footer>
-    <p>© 2026 Rocco & Chantal</p>
+    <p style="text-align:center; font-size:0.75em; opacity:0.6; margin-top:40px;">
+        <a href="impressum.html" style="color:#666; text-decoration:none;">Impressum</a> |
+        <a href="datenschutz.html" style="color:#666; text-decoration:none;">Datenschutz</a>
+    </p>
+    <p style="text-align:center; font-size:0.75em; opacity:0.6;">© 2026 Rocco & Chantal</p>
 </footer>
 
 </body>
 </html>
+
 
 
