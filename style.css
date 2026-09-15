@@ -80,6 +80,25 @@ nav ul li a {
     text-decoration: none !important;
     font-weight: bold !important;
 }
+    nav {
+    display: block !important;
+    margin-top: 10px !important;
+}
+
+nav ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    gap: 20px !important;
+}
+
+nav ul li a {
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
 
 
 }
