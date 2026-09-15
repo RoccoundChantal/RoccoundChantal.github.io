@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Sonstige Lieder</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<h1>Sonstige Lieder</h1>
+
+<h2>Alle Songs</h2>
+
+<ul class="songlist">
+    <li data-file="Song1.mp3">Song 1</li>
+    <li data-file="Song2.mp3">Song 2</li>
+    <li data-file="Song3.mp3">Song 3</li>
+    <!-- Hier einfach deine echten Dateien eintragen -->
+</ul>
+
+<script>
+document.querySelectorAll('.songlist li').forEach(item => {
+    item.addEventListener('click', () => {
+        const file = item.getAttribute('data-file');
+        window.location.href = file;
+    });
+});
+</script>
+
+</body>
+</html>
 
