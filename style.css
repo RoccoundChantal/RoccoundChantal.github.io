@@ -7,11 +7,12 @@
 }
 
 /* Header */
-header {
-    text-align: center;
-    margin-bottom: 20px;
+.header-img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;   /* passt perfekt für Desktop */
+    object-fit: cover;
 }
-
 /* Navigation – erweitert, aber im gleichen Stil */
 .main-nav {
     margin-bottom: 20px;
