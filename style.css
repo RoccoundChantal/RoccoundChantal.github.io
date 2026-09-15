@@ -8,6 +8,27 @@ header img {
     width: 100%;
     height: auto;
 }
+/* Moderne Kategorie-Buttons */
+.category-buttons {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.cat-btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.cat-btn:hover {
+    background: #555;
+}
 
 .hero {
     text-align: center;
