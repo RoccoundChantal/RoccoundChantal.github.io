@@ -12,7 +12,11 @@ header {
     margin-bottom: 20px;
 }
 
-/* Navigation */
+/* Navigation – erweitert, aber im gleichen Stil */
+.main-nav {
+    margin-bottom: 20px;
+}
+
 .main-nav ul {
     list-style: none;
     padding: 0;
@@ -28,6 +32,10 @@ header {
     font-weight: bold;
 }
 
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Login Button */
 .login-btn {
     margin: 10px 0;
@@ -35,6 +43,7 @@ header {
     font-size: 16px;
 }
 
+/* Songliste – DEINE Download-Buttons bleiben erhalten */
 .songlist li {
     cursor: pointer;
     margin: 8px 0;
@@ -85,4 +94,5 @@ footer {
 .footer-copy {
     margin: 0;
 }
+
 
