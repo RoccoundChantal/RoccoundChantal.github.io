@@ -1,7 +1,7 @@
-/* Seitenbreite ca. 25 cm */
+/* Seitenbreite */
 .page-wrapper {
     width: 100%;
-    max-width: 900px;   /* Desktop */
+    max-width: 900px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
@@ -13,24 +13,8 @@
     max-height: 280px;
     object-fit: cover;
 }
-@media (max-width: 600px) {
-    .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-@media (max-width: 600px) {
-    .songlist {
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 600px) {
-    .header-img {
-        max-height: 180px;
-    }
-}
 
-/* Navigation – erweitert, aber im gleichen Stil */
+/* Navigation */
 .main-nav {
     margin-bottom: 20px;
 }
@@ -54,25 +38,35 @@
     text-decoration: underline;
 }
 
-/* Login Button */
-.login-btn {
-    margin: 10px 0;
-    padding: 10px 20px;
-    font-size: 16px;
+/* Songliste – 2 Spalten */
+.songlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    padding: 0;
+    margin: 20px 0;
 }
 
-/* Songliste – DEINE Download-Buttons bleiben erhalten */
 .songlist li {
-    margin: 4px 0;   /* statt 8px */
+    list-style: none;
+    margin: 4px 0;
     font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
-/* Content */
-.content-box {
-    margin-top: 20px;
+/* Download-Button */
+.download-btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9em;
 }
 
-/* Footer – sauber, ohne Überschneidung */
+/* Footer */
 footer {
     margin-top: 40px;
     font-size: 12px;
@@ -83,49 +77,24 @@ footer {
     padding: 5px 0;
 }
 
-/* Impressum & Datenschutz nebeneinander */
-.footer-left {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-link {
-    color: #555;
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-/* Copyright rechts */
 .footer-copy {
     margin: 0;
 }
-/* SONG-LISTE – 2 einheitliche Spalten */
-.songlist {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* exakt 2 Spalten */
-    gap: 12px 20px; /* Abstand zwischen den Songs */
-    padding: 0;
-    margin: 20px 0;
+
+/* Handy-Optimierung */
+@media (max-width: 600px) {
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .songlist {
+        grid-template-columns: 1fr;
+    }
+
+    .header-img {
+        max-height: 180px;
+    }
 }
 
-/* Download-Button VOR dem Titel */
-.songlist li {
-    list-style: none;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-
-.songlist li::before {
-    content: "Download";
-    background-color: #0077cc;
-    color: white;
-    padding: 4px 8px;
-    margin-right: 10px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    cursor: pointer;
-}
