@@ -2,48 +2,51 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>SEITENTITEL</title>
+<title>Hoffnungs‑Lieder</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<!-- HEADER MIT COVER -->
 <header>
     <img src="../header2.jpg" alt="Header" style="width:100%; height:auto;">
 </header>
 
-<!-- LIED-BUTTONS AUF JEDER UNTERSEITE -->
 <nav class="main-nav">
     <ul>
+        <li><a href="../index.html">Startseite</a></li>
         <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
         <li><a href="../Klassik/index.html">Klassik</a></li>
         <li><a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
-        <li><a href="../news.html">News</a></li>
-        <li><a href="../login.html">Login</a></li>
+        <li><a href="../impressum.html">Impressum</a></li>
+        <li><a href="../datenschutz.html">Datenschutz</a></li>
     </ul>
 </nav>
 
-<h1>SEITENTITEL</h1>
+<h1>Hoffnungs‑Lieder</h1>
 
 <h2>Alle Songs</h2>
 
 <ul class="songlist">
-    <!-- Beispiel -->
-    <li data-file="Song1.mp3">Song 1</li>
-    <li data-file="Song2.mp3">Song 2</li>
+    <li><a href="Alles was ich bin.mp3">Alles was ich bin</a></li>
+    <li><a href="Babylon du große Stadt.mp3">Babylon du große Stadt</a></li>
+    <li><a href="Dein Geist berührt mich.mp3">Dein Geist berührt mich</a></li>
+    <li><a href="Die Neue Welt.mp3">Die Neue Welt</a></li>
+    <li><a href="Die Wahrheit brennt_F, Remake.mp3">Die Wahrheit brennt (F, Remake)</a></li>
+    <li><a href="Die Wahrheit brennt_M.mp3">Die Wahrheit brennt (M)</a></li>
+    <li><a href="Du darfst das verstehn.mp3">Du darfst das verstehn</a></li>
+    <li><a href="Du gibst Hoffnung.mp3">Du gibst Hoffnung</a></li>
+    <li><a href="Durch deinen Sohn.mp3">Durch deinen Sohn</a></li>
 </ul>
 
-<script>
-document.querySelectorAll('.songlist li').forEach(item => {
-    item.addEventListener('click', () => {
-        const file = item.getAttribute('data-file');
-        window.location.href = file;
-    });
-});
-</script>
+<footer>
+    <div class="footer-left">
+        <p class="footer-copy">© 2026 Rocco & Chantal</p>
+        <a href="../impressum.html" class="footer-link">Impressum</a>
+        <a href="../datenschutz.html" class="footer-link">Datenschutz</a>
+    </div>
+</footer>
 
 </body>
 </html>
-
 
