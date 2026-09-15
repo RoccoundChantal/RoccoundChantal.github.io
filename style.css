@@ -45,8 +45,8 @@ header {
 
 /* Songliste – DEINE Download-Buttons bleiben erhalten */
 .songlist li {
-    cursor: pointer;
-    margin: 8px 0;
+    margin: 4px 0;   /* statt 8px */
+    font-size: 18px;
 }
 
 /* Content */
