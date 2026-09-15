@@ -1,7 +1,7 @@
 /* Seitenbreite ca. 25 cm */
 .page-wrapper {
-    width: 25cm;
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px;   /* Desktop */
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
@@ -13,6 +13,23 @@
     max-height: 280px;   /* passt perfekt für Desktop */
     object-fit: cover;
 }
+@media (max-width: 600px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .songlist {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .header-img {
+        max-height: 180px;
+    }
+}
+
 /* Navigation – erweitert, aber im gleichen Stil */
 .main-nav {
     margin-bottom: 20px;
