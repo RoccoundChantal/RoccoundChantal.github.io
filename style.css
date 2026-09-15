@@ -35,6 +35,21 @@ header {
     font-size: 16px;
 }
 
+.songlist li {
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.songlist li::after {
+    content: "Download";
+    background-color: #0077cc;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
 /* Content */
 .content-box {
     margin-top: 20px;
