@@ -1,19 +1,21 @@
-/* Inhalt nach rechts verschieben */
+/* Seite zentrieren */
 body {
     margin: 0;
- }
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
 
-/* Moderne Kategorie-Buttons */
-.category-buttons {
-    text-align: center;
-    margin: 25px 0;
-    /* Zentrale Inhalts-Spalte */
+/* Zentrale Inhalts-Spalte */
 .content-box {
     max-width: 800px;      /* ca. 20 cm */
     margin: 0 auto;        /* mittig */
     padding: 0 1cm;        /* links + rechts 1 cm */
 }
 
+/* Kategorie-Buttons */
+.category-buttons {
+    text-align: center;
+    margin: 25px 0;
 }
 
 .cat-btn {
@@ -42,6 +44,20 @@ footer p {
     text-align: center;
     font-size: 0.75em;
     opacity: 0.6;
+}
+
+/* Handy-Optimierung */
+@media (max-width: 600px) {
+    .content-box {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .cat-btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
 }
 
 
