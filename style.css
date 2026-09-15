@@ -1,6 +1,7 @@
 /* Inhalt nach rechts verschieben */
 body {
-    margin-left: 5px;
+    margin: 0;
+    margin-left: 1cm;
 }
 
 /* Moderne Kategorie-Buttons */
