@@ -1,4 +1,6 @@
-/* Seitenbreite */
+/* ============================================
+   Grundlayout
+   ============================================ */
 .page-wrapper {
     width: 100%;
     max-width: 900px;
@@ -6,7 +8,9 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header */
+/* ============================================
+   Header-Bild
+   ============================================ */
 .header-img {
     width: 100%;
     height: auto;
@@ -14,9 +18,11 @@
     object-fit: cover;
 }
 
-/* Navigation */
+/* ============================================
+   Navigation
+   ============================================ */
 .main-nav {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .main-nav ul {
@@ -26,19 +32,42 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-nav ul li a {
-    color: black;
+    color: #222;
     text-decoration: none;
     font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
 }
 
 .main-nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #f0f0f0;
 }
 
-/* Songliste – 2 Spalten */
+/* ============================================
+   Startseite – Begrüßungsbox
+   ============================================ */
+.start-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.start-box h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.start-box p {
+    font-size: 18px;
+    color: #444;
+}
+
+/* ============================================
+   Songliste – 2 Spalten Desktop, 1 Spalte Handy
+   ============================================ */
 .songlist {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -55,7 +84,9 @@
     align-items: center;
 }
 
-/* Download-Button */
+/* ============================================
+   Download-Button (funktionierend)
+   ============================================ */
 .download-btn {
     background-color: #0077cc;
     color: white;
@@ -66,13 +97,15 @@
     font-size: 0.9em;
 }
 
-/* Footer */
+/* ============================================
+   Footer
+   ============================================ */
 footer {
     margin-top: 40px;
     font-size: 12px;
     color: #555;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 5px 0;
 }
@@ -81,7 +114,9 @@ footer {
     margin: 0;
 }
 
-/* Handy-Optimierung */
+/* ============================================
+   Handy-Optimierung
+   ============================================ */
 @media (max-width: 600px) {
 
     .main-nav ul {
@@ -95,6 +130,14 @@ footer {
 
     .header-img {
         max-height: 180px;
+    }
+
+    .start-box h1 {
+        font-size: 22px;
+    }
+
+    .start-box p {
+        font-size: 16px;
     }
 }
 
