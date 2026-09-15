@@ -47,6 +47,7 @@ footer {
     position: relative;
 }
 
+/* Impressum & Datenschutz unten links */
 .footer-left {
     position: absolute;
     left: 0;
@@ -63,7 +64,4 @@ footer {
     text-decoration: underline;
 }
 
-
-
-}
 
