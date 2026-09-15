@@ -46,7 +46,15 @@
 .main-nav ul li a:hover {
     background-color: #f0f0f0;
 }
-
+/* Aktiver Menüpunkt ROT */
+.startseite .main-nav a[href="index.html"],
+.hoffnung .main-nav a[href="../Hoffnungs-Lieder/index.html"],
+.klassik .main-nav a[href="../Klassik/index.html"],
+.sonstige .main-nav a[href="../Sonstige-Lieder/index.html"],
+.impressum .main-nav a[href="impressum.html"],
+.datenschutz .main-nav a[href="datenschutz.html"] {
+    color: red;
+}
 /* ============================================
    Startseite – Begrüßungsbox
    ============================================ */
