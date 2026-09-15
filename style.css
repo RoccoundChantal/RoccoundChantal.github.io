@@ -10,7 +10,7 @@
 .header-img {
     width: 100%;
     height: auto;
-    max-height: 280px;   /* passt perfekt für Desktop */
+    max-height: 280px;
     object-fit: cover;
 }
 @media (max-width: 600px) {
