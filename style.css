@@ -1,13 +1,53 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
+/* Linke Shop-Navigation */
+.sidebar {
+    width: 220px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.4);
 }
 
-header img {
-    width: 100%;
-    height: auto;
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
 }
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 12px 0;
+}
+
+.sidebar ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #444;
+    color: #fff;
+}
+
+/* Inhalt nach rechts verschieben */
+body {
+    margin-left: 240px;
+}
+
 /* Moderne Kategorie-Buttons */
 .category-buttons {
     text-align: center;
@@ -30,72 +70,16 @@ header img {
     background: #555;
 }
 
-.hero {
-    text-align: center;
-    padding: 20px;
-}
-
-.main-nav {
-    width: 100%;
-    background: #222;
-    padding: 12px 0;
-    text-align: center;
-}
-
-.main-nav a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 8px 14px;
-    border-radius: 6px;
-    background: #333;
-}
-
-.main-nav a:hover {
-    background: #444;
-    color: #ffcc00;
-}
-
-.content {
-    padding: 20px;
-}
-
-.content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.content li {
-    margin: 8px 0;
-}
-
-.content a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.content a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #222;
-    color: #fff;
-}
-
+/* Footer minimal */
 footer a {
-    color: #ffcc00;
+    color: #666;
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer p {
+    text-align: center;
+    font-size: 0.75em;
+    opacity: 0.6;
 }
 
 
