@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocco & Chantal – Musik</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="songs.html">Songs</a></li>
-        <li><a href="downloads.html">Downloads</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="login.html">Login</a></li>
-    </ul>
-</nav>
 
 <body>
 
-<!-- LOGIN BUTTON -->
-<button onclick="login()" class="login-btn">Login</button>
-<!-- rebuild -->
+<div class="page-wrapper">
 
-<!-- NACHRICHTEN (nur sichtbar nach Login) -->
-<div id="news" class="protected hidden news-box">
-    <h2>Aktuelle Nachrichten</h2>
-    <p>Hier stehen deine Nachrichten…</p>
+    <!-- HEADER -->
+    <header>
+        <img src="header1.jpg" alt="Header" style="width:100%; height:auto;">
+        <h1>Rocco & Chantal</h1>
+        <p>Musik, Downloads & News</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- LOGIN BUTTON -->
+    <button onclick="login()" class="login-btn">Login</button>
+
+    <!-- NACHRICHTEN -->
+    <div id="news" class="protected hidden news-box">
+        <h2>Aktuelle Nachrichten</h2>
+        <p>Hier stehen deine Nachrichten…</p>
+    </div>
+
+    <!-- HAUPT-INHALT -->
+    <div class="content-box">
+        <h2>Unsere Songs</h2>
+
+        <a href="song1.mp3" class="protected hidden dl-btn" download>Song 1 downloaden</a>
+        <a href="song2.mp3" class="protected hidden dl-btn" download>Song 2 downloaden</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="Impressum.html" class="footer-link">Impressum</a>
+        <a href="Datenschutz.html" class="footer-link">Datenschutz</a>
+        <p>&copy; 2026 Rocco & Chantal</p>
+    </footer>
+
 </div>
-
-<!-- HEADER -->
-<header>
-    <img src="header1.jpg" alt="Header" style="width:100%; height:auto;">
-    <h1>Rocco & Chantal</h1>
-    <p>Musik, Downloads & News</p>
-</header>
-
-
-<!-- HAUPT-INHALT -->
-<div class="content-box">
-    <h2>Unsere Songs</h2>
-
-    <!-- DOWNLOADS (nur sichtbar nach Login) -->
-    <a href="song1.mp3" class="protected hidden dl-btn" download>Song 1 downloaden</a>
-    <a href="song2.mp3" class="protected hidden dl-btn" download>Song 2 downloaden</a>
-</div>
-
-<!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 Rocco & Chantal</p>
-</footer>
 
 <!-- LOGIN SCRIPT -->
 <script src="login.js"></script>
