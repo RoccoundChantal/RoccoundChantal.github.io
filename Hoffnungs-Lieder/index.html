@@ -11,17 +11,28 @@
 <h1>Hoffnungs-Lieder</h1>
 
 <h2>Alle Songs</h2>
-<ul>
-    <li><a href="Alles was ich bin.mp3">Alles was ich bin</a></li>
-    <li><a href="Babylon du große Stadt.mp3">Babylon du große Stadt</a></li>
-    <li><a href="Dein Geist berührt mich.mp3">Dein Geist berührt mich</a></li>
-    <li><a href="Die Neue Welt.mp3">Die Neue Welt</a></li>
-    <li><a href="Die Wahrheit brennt_F, Remake.mp3">Die Wahrheit brennt (F, Remake)</a></li>
-    <li><a href="Die Wahrheit brennt_M.mp3">Die Wahrheit brennt (M)</a></li>
-    <li><a href="Du darfst das verstehn.mp3">Du darfst das verstehn</a></li>
-    <li><a href="Du gibst Hoffnung.mp3">Du gibst Hoffnung</a></li>
-    <li><a href="Durch deinen Sohn.mp3">Durch deinen Sohn</a></li>
+
+<ul class="songlist">
+    <li data-file="Alles was ich bin.mp3">Alles was ich bin</li>
+    <li data-file="Babylon du große Stadt.mp3">Babylon du große Stadt</li>
+    <li data-file="Dein Geist berührt mich.mp3">Dein Geist berührt mich</li>
+    <li data-file="Die Neue Welt.mp3">Die Neue Welt</li>
+    <li data-file="Die Wahrheit brennt_F, Remake.mp3">Die Wahrheit brennt (F, Remake)</li>
+    <li data-file="Die Wahrheit brennt_M.mp3">Die Wahrheit brennt (M)</li>
+    <li data-file="Du darfst das verstehn.mp3">Du darfst das verstehn</li>
+    <li data-file="Du gibst Hoffnung.mp3">Du gibst Hoffnung</li>
+    <li data-file="Durch deinen Sohn.mp3">Durch deinen Sohn</li>
 </ul>
+
+<script>
+document.querySelectorAll('.songlist li').forEach(item => {
+    item.addEventListener('click', () => {
+        const file = item.getAttribute('data-file');
+        window.location.href = file;
+    });
+});
+</script>
 
 </body>
 </html>
+
