@@ -1,13 +1,19 @@
 /* Inhalt nach rechts verschieben */
 body {
     margin: 0;
-    margin-left: 1cm;
-}
+ }
 
 /* Moderne Kategorie-Buttons */
 .category-buttons {
     text-align: center;
     margin: 25px 0;
+    /* Zentrale Inhalts-Spalte */
+.content-box {
+    max-width: 800px;      /* ca. 20 cm */
+    margin: 0 auto;        /* mittig */
+    padding: 0 1cm;        /* links + rechts 1 cm */
+}
+
 }
 
 .cat-btn {
