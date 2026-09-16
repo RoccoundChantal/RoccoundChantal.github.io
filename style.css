@@ -3,7 +3,7 @@
    ============================================ */
 .page-wrapper {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;   /* WICHTIG: vorher 900px → jetzt 1200px */
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
