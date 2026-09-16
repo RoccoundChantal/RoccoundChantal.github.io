@@ -5,6 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocco & Chantal – Musik</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* HEADER */
+        .header-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* NAVIGATION */
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        .main-nav li {
+            margin: 0 10px;
+        }
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .main-nav a.active {
+            background-color: red;
+            border-radius: 6px;
+        }
+
+        /* COVER-GALERIE */
+        .cover-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .cover-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* WILLKOMMEN */
+        .content-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content-box p {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        /* LAYOUT */
+        .page-wrapper {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,7 +87,7 @@
          1. HEADER
          ============================ -->
     <header>
-        <img src="header1.jpg" alt="Header" style="width:100%; height:auto;">
+        <img src="header2.jpg" alt="Header" class="header-img">
     </header>
 
     <!-- ============================
@@ -32,20 +104,7 @@
     </nav>
 
     <!-- ============================
-         3. LOGIN-BEREICH
-         ============================ -->
-    <button onclick="login()" class="login-btn">Login</button>
-
-    <!-- ============================
-         4. NACHRICHTEN
-         ============================ -->
-    <div id="news" class="protected hidden news-box">
-        <h2>Aktuelle Nachrichten</h2>
-        <p>Hier stehen deine Nachrichten…</p>
-    </div>
-
-    <!-- ============================
-         5. COVER-GALERIE
+         3. COVER-GALERIE
          ============================ -->
     <h2 style="text-align:center; margin-top:20px;">Unsere Cover</h2>
     <div class="cover-gallery">
@@ -56,7 +115,7 @@
     </div>
 
     <!-- ============================
-         6. WILLKOMMEN-TEXT
+         4. WILLKOMMEN-TEXT
          ============================ -->
     <div class="content-box">
         <h2>Willkommen bei Rocco & Chantal</h2>
@@ -66,7 +125,7 @@
     </div>
 
     <!-- ============================
-         7. FOOTER
+         5. FOOTER
          ============================ -->
     <footer>
         <div class="footer-left">
@@ -82,4 +141,5 @@
 
 </body>
 </html>
+
 
