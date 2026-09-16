@@ -196,5 +196,21 @@ footer {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+}/* ============================================
+   Startseite – Cover-Galerie (5 Cover in einer Reihe)
+   ============================================ */
+.cover-gallery {
+    display: flex;
+    flex-wrap: nowrap;      /* verhindert den Umbruch */
+    gap: 15px;              /* Abstand zwischen den Bildern */
+    justify-content: center;/* zentriert die gesamte Reihe */
+    margin-top: 20px;
+}
+
+.cover-gallery img {
+    width: 180px;           /* feste Breite für alle Cover */
+    height: 180px;          /* feste Höhe für quadratische Cover */
+    object-fit: cover;      /* sauberer Zuschnitt */
+    border-radius: 12px;    /* leichte Abrundung */
 }
 }
