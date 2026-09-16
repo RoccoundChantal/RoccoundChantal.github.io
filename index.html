@@ -8,13 +8,14 @@
 
     <style>
         /* HEADER */
-        .header-img {
-            width: 100%;
-            height: 300px;      /* perfekte Header-Höhe */
-            object-fit: cover;  /* Bild wird sauber eingepasst */
-            border-radius: 12px;
-            display: block;
-        }
+       .header-img {
+    width: 100%;
+    height: auto;        /* passt sich der Breite an */
+    max-height: 400px;   /* begrenzt die Höhe auf großen Bildschirmen */
+    object-fit: contain; /* nichts wird abgeschnitten */
+    border-radius: 12px;
+    display: block;
+}
 
         /* NAVIGATION */
         .main-nav ul {
