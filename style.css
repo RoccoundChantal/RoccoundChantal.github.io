@@ -65,6 +65,10 @@
     color: white !important;
     border-radius: 6px;
 }
+nav ul li a.active {
+    background-color: red;
+    color: white;
+}
 
 /* ============================================
    Dropdown unter „Lieder“
