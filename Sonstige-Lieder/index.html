@@ -1,20 +1,33 @@
+<!-- ============================================
+   1. Dokumenttyp & Sprache
+   ============================================ -->
 <!DOCTYPE html>
 <html lang="de">
+
+<!-- ============================================
+   2. HEAD-BEREICH (Meta, Titel, CSS)
+   ============================================ -->
 <head>
-<meta charset="UTF-8">
-<title>SEITENTITEL</title>
-<link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <title>Sonstige Lieder</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<!-- ============================================
+   3. BODY-START + Seitenklasse
+   ============================================ -->
 <body class="sonstige">
 
-<!-- HEADER MIT COVER -->
+<!-- ============================================
+   4. HEADER-BEREICH (Großes Titelbild)
+   ============================================ -->
 <header>
-    <img src="../header2.jpg" alt="Header" style="width:100%; height:auto;">
+    <img src="../header2.jpg" alt="Header" class="header-img">
 </header>
 
-<!-- LIED-BUTTONS AUF JEDER UNTERSEITE -->
+<!-- ============================================
+   5. NAVIGATION
+   ============================================ -->
 <nav class="main-nav">
     <ul>
         <li><a href="../index.html">Startseite</a></li>
@@ -26,22 +39,43 @@
     </ul>
 </nav>
 
-
-<h1>SEITENTITEL</h1>
-
+<!-- ============================================
+   6. SEITENTITEL
+   ============================================ -->
+<h1>Sonstige Lieder</h1>
 <h2>Alle Songs</h2>
 
+<!-- ============================================
+   7. SONG-LISTE MIT "neu"-System
+   ============================================ -->
 <ul class="songlist">
-    <!-- Beispiel -->
-    <li data-file="Song1.mp3">Song 1</li>
-    <li data-file="Song2.mp3">Song 2</li>
+
+    <li data-date="2026-09-01" data-file="Song1.mp3">
+        Song 1
+    </li>
+
+    <li data-date="2026-09-05" data-file="Song2.mp3">
+        Song 2
+    </li>
+
+    <li data-date="2026-09-10" data-file="Song3.mp3">
+        Song 3
+    </li>
+
 </ul>
+
+<!-- ============================================
+   8. FOOTER
+   ============================================ -->
 <footer>
     <div class="footer-left">
         <p class="footer-copy">© 2026 Rocco & Chantal</p>
     </div>
 </footer>
 
+<!-- ============================================
+   9. JS: Klick auf Song + "neu"-Anzeige
+   ============================================ -->
 <script>
 document.querySelectorAll('.songlist li').forEach(item => {
     item.addEventListener('click', () => {
@@ -50,6 +84,8 @@ document.querySelectorAll('.songlist li').forEach(item => {
     });
 });
 </script>
+
+<script src="../neu.js"></script>
 
 </body>
 </html>
