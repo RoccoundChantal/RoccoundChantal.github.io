@@ -8,14 +8,14 @@
 
     <style>
         /* HEADER */
-       .header-img {
-    width: 100%;
-    height: auto;        /* passt sich der Breite an */
-    max-height: 400px;   /* begrenzt die Höhe auf großen Bildschirmen */
-    object-fit: contain; /* nichts wird abgeschnitten */
-    border-radius: 12px;
-    display: block;
-}
+        .header-img {
+            width: 100%;
+            height: auto;        /* dynamisch */
+            min-height: 300px;   /* verhindert schmalen Header */
+            object-fit: cover;   /* füllt den Bereich sauber */
+            border-radius: 12px; /* abgerundete Ecken */
+            display: block;
+        }
 
         /* NAVIGATION */
         .main-nav ul {
@@ -89,21 +89,21 @@
     <!-- ============================
          1. HEADER
          ============================ -->
-   <header>
-    <img src="start-cover.jpg" alt="Header" class="header-img">
-</header>
+    <header>
+        <img src="start-cover.jpg" alt="Header" class="header-img">
+    </header>
 
     <!-- ============================
          STARTKICK (Header-Reload)
          ============================ -->
-   <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const headerImg = document.querySelector(".header-img");
-    if (headerImg) {
-        headerImg.src = headerImg.src.split("?")[0] + "?v=" + Date.now();
-    }
-});
-</script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const headerImg = document.querySelector(".header-img");
+        if (headerImg) {
+            headerImg.src = headerImg.src.split("?")[0] + "?v=" + Date.now();
+        }
+    });
+    </script>
 
     <!-- ============================
          2. NAVIGATION
