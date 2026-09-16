@@ -37,9 +37,13 @@
     flex-wrap: wrap;
 }
 
+.main-nav ul li {
+    position: relative; /* WICHTIG für Dropdown */
+}
+
 /* Buttons – Standard */
 .main-nav ul li a {
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.4); /* dezent sichtbar */
     color: white !important;
     text-decoration: none;
     font-weight: bold;
@@ -71,6 +75,7 @@
     padding: 10px;
     border-radius: 6px;
     margin-top: 5px;
+    min-width: 180px;
 }
 
 .main-nav ul li:hover ul {
@@ -229,8 +234,4 @@ footer {
         height: auto;
     }
 }
-
-
-
-
 
