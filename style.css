@@ -170,4 +170,16 @@ footer {
     .start-box p {
         font-size: 16px;
     }
+   /* ============================================
+   Header + Cover: gleiche Breite + runde Ecken
+   ============================================ */
+.header-img,
+.start-images img {
+    width: 100%;
+    max-width: 300px; /* gleiche Breite für alle */
+    border-radius: 12px; /* abgerundete Ecken */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
 }
