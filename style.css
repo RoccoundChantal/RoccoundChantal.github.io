@@ -8,31 +8,39 @@
 }
 
 /* ============================================
-   SONG-LISTE (Layout)
+   HL – SONG-LISTE (Layout)
+   NUR auf HL-Seite aktiv!
    ============================================ */
-.songlist {
+body.hoffnung .songlist {
     max-width: 900px;
     margin: 0 auto;
     padding: 10px 20px;
 }
 
-.songlist li {
+body.hoffnung .songlist li {
     list-style: none;
     margin: 8px 0;
     display: flex;
     align-items: center;
 }
 
-.songlist li a {
+/* ============================================
+   HL – Liedtitel mit fester Breite (Tabellenoptik)
+   ============================================ */
+body.hoffnung .songlist li a {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    display: inline-block;
+    width: 40ch;              /* feste Zeilenlänge */
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /* ============================================
-   DOWNLOAD-BUTTON hinter jedem Song
+   HL – DOWNLOAD-BUTTON hinter jedem Song
    ============================================ */
-.download-btn {
+body.hoffnung .download-btn {
     background-color: #0077cc;
     color: white;
     padding: 4px 8px;
@@ -40,18 +48,20 @@
     border-radius: 4px;
     font-size: 0.9em;
     cursor: pointer;
+    display: inline-block;
 }
 
 /* ============================================
-   NEU-BADGE (automatisch per neu.js)
+   HL – NEU-BADGE (automatisch per neu.js)
    ============================================ */
-.neu {
+body.hoffnung .neu {
     background: red;
     color: white;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 12px;
-    margin-left: 10px;
+    margin-left: 12px;
+    display: inline-block;
 }
 
 /* ============================================
