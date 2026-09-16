@@ -94,9 +94,11 @@
 }
 
 /* ============================================
-   Startseite – Cover-Galerie (4 Cover)
+   Startseite – Cover-Galerie (5 Cover)
    ============================================ */
-/* Willkommen-Text zentrieren */
+/* ============================================
+   Willkommen-Text zentrieren
+   ============================================ */
 .content-box {
     text-align: center;
     margin-top: 20px;
@@ -106,6 +108,7 @@
     max-width: 600px;
     margin: 10px auto;
 }
+
 
 .start-images {
     display: flex;
