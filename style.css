@@ -13,12 +13,11 @@
    ============================================ */
 .header-img {
     width: 100%;
-    max-width: 1200px;   /* gleiche Breite wie die 5 Cover */
-    margin: 0 auto;      /* zentriert */
+    height: auto;
+    max-width: 900px;      /* optimale Breite */
+    margin: 0 auto 20px;   /* zentriert + Abstand nach unten */
     display: block;
     border-radius: 12px;
-    object-fit: cover;
-    min-height: 250px;
 }
 
 /* ============================================
