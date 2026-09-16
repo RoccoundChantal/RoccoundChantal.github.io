@@ -23,6 +23,9 @@
 /* ============================================
    Navigation
    ============================================ */
+/* ============================================
+   Navigation – Buttons
+   ============================================ */
 .main-nav {
     margin: 20px 0;
 }
@@ -37,28 +40,26 @@
     flex-wrap: wrap;
 }
 
-/* Text IMMER weiß */
+/* Buttons – Text immer weiß */
 .main-nav ul li a {
     color: white !important;
     text-decoration: none;
     font-weight: bold;
-    padding: 6px 10px;
-    border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: #444;   /* Standardfarbe */
+    display: block;
 }
 
+/* Hover */
 .main-nav ul li a:hover {
-    background-color: #f0f0f0;
-    color: black !important;
+    background-color: #666;
+    color: white !important;
 }
 
-/* Aktiver Menüpunkt ROT */
-.startseite .main-nav a[href="index.html"],
-.hoffnung .main-nav a[href="../Hoffnungs-Lieder/index.html"],
-.klassik .main-nav a[href="../Klassik/index.html"],
-.sonstige .main-nav a[href="../Sonstige-Lieder/index.html"],
-.impressum .main-nav a[href="impressum.html"],
-.datenschutz .main-nav a[href="datenschutz.html"] {
-    background-color: #c00;
+/* Aktiver Menüpunkt */
+.main-nav a.active {
+    background-color: #c00;   /* Rot */
     color: white !important;
 }
 
