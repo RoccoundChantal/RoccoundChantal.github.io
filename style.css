@@ -3,13 +3,13 @@
    ============================================ */
 .page-wrapper {
     width: 100%;
-    max-width: 1200px;   /* WICHTIG: vorher 900px → jetzt 1200px */
+    max-width: 1200px;   /* WICHTIG: damit 5 Cover nebeneinander passen */
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
 
 /* ============================================
-   Header-Bild
+   Header-Bild – Start-Cover (volle Breite)
    ============================================ */
 .header-img {
     width: 100%;
@@ -147,9 +147,8 @@ footer {
 }
 
 /* ============================================
-   Header + Cover: gleiche Breite + runde Ecken
+   Kleine Cover-Bilder (NICHT Start-Cover!)
    ============================================ */
-.header-img,
 .start-images img {
     width: 100%;
     max-width: 300px;
@@ -216,6 +215,7 @@ footer {
         height: auto;
     }
 }
+
 
 
 
