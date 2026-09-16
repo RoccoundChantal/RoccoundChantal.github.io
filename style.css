@@ -41,13 +41,6 @@
     font-size: 0.9em;
     cursor: pointer;
 }
-/* Liedtitel auf feste Breite von ca. 40 Zeichen */
-.hoffnung .songlist li a {
-    display: inline-block;
-    width: 40ch;
-    overflow: hidden;
-    white-space: nowrap;
-}
 
 /* ============================================
    NEU-BADGE (automatisch per neu.js)
