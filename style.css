@@ -37,8 +37,9 @@
     flex-wrap: wrap;
 }
 
+/* Text IMMER weiß */
 .main-nav ul li a {
-    color: #222;
+    color: white !important;
     text-decoration: none;
     font-weight: bold;
     padding: 6px 10px;
@@ -47,6 +48,7 @@
 
 .main-nav ul li a:hover {
     background-color: #f0f0f0;
+    color: black !important;
 }
 
 /* Aktiver Menüpunkt ROT */
@@ -56,22 +58,8 @@
 .sonstige .main-nav a[href="../Sonstige-Lieder/index.html"],
 .impressum .main-nav a[href="impressum.html"],
 .datenschutz .main-nav a[href="datenschutz.html"] {
-    color: red;
-}
-
-/* Navigation Schriftfarbe */
-.main-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-/* Aktiver Menüpunkt */
-.main-nav a.active {
     background-color: #c00;
-    color: white;
-    border-radius: 6px;
+    color: white !important;
 }
 
 /* ============================================
@@ -228,5 +216,6 @@ footer {
         height: auto;
     }
 }
+
 
 
