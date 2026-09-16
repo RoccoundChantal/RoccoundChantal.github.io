@@ -3,7 +3,7 @@
    ============================================ */
 .page-wrapper {
     width: 100%;
-    max-width: 1200px;   /* WICHTIG: damit 5 Cover nebeneinander passen */
+    max-width: 1200px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
@@ -21,10 +21,7 @@
 }
 
 /* ============================================
-   Navigation
-   ============================================ */
-/* ============================================
-   Navigation – Buttons
+   Navigation – Hauptmenü
    ============================================ */
 .main-nav {
     margin: 20px 0;
@@ -40,27 +37,55 @@
     flex-wrap: wrap;
 }
 
-/* Buttons – Text immer weiß */
+/* Buttons – Standard */
 .main-nav ul li a {
+    background-color: transparent;
     color: white !important;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 6px;
-    background-color: #444;   /* Standardfarbe */
     display: block;
 }
 
 /* Hover */
 .main-nav ul li a:hover {
-    background-color: #666;
+    background-color: rgba(255,255,255,0.2);
     color: white !important;
 }
 
 /* Aktiver Menüpunkt */
 .main-nav a.active {
-    background-color: #c00;   /* Rot */
+    background-color: #c00;
     color: white !important;
+    border-radius: 6px;
+}
+
+/* ============================================
+   Dropdown unter „Lieder“
+   ============================================ */
+.main-nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.main-nav ul li:hover ul {
+    display: block;
+}
+
+.main-nav ul li ul li a {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: white !important;
+    white-space: nowrap;
+}
+
+.main-nav ul li ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
 }
 
 /* ============================================
@@ -148,24 +173,12 @@ footer {
 }
 
 /* ============================================
-   Kleine Cover-Bilder (NICHT Start-Cover!)
-   ============================================ */
-.start-images img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-/* ============================================
-   Startseite – Cover-Galerie (5 Cover in einer Reihe)
+   Startseite – Cover-Galerie (5 Cover)
    ============================================ */
 .cover-gallery {
     display: flex;
-    flex-wrap: nowrap;      /* verhindert den Umbruch */
-    gap: 5px;
+    flex-wrap: nowrap;
+    gap: 5px; /* WICHTIG: damit 5 Cover reinpassen */
     justify-content: center;
     margin-top: 20px;
 }
@@ -208,7 +221,7 @@ footer {
     }
 
     .cover-gallery {
-        flex-wrap: wrap; /* Handy darf umbrechen */
+        flex-wrap: wrap;
     }
 
     .cover-gallery img {
@@ -216,6 +229,7 @@ footer {
         height: auto;
     }
 }
+
 
 
 
