@@ -1,135 +1,7 @@
 /* ============================================
-   Grundlayout
-   ============================================ */
-.page-wrapper {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-/* ============================================
-   Header-Bild
-   ============================================ */
-.header-img {
-    width: 100%;
-    height: auto;
-    max-height: 280px;
-    object-fit: cover;
-}
-
-/* ============================================
-   Navigation
-   ============================================ */
-.main-nav {
-    margin: 20px 0;
-}
-
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.main-nav ul li a {
-    color: #222;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 10px;
-    border-radius: 4px;
-}
-
-.main-nav ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-/* Aktiver Menüpunkt ROT */
-.startseite .main-nav a[href="index.html"],
-.hoffnung .main-nav a[href="../Hoffnungs-Lieder/index.html"],
-.klassik .main-nav a[href="../Klassik/index.html"],
-.sonstige .main-nav a[href="../Sonstige-Lieder/index.html"],
-.impressum .main-nav a[href="impressum.html"],
-.datenschutz .main-nav a[href="datenschutz.html"] {
-    color: red;
-}
-
-/* ============================================
-   Startseite – Begrüßungsbox
-   ============================================ */
-.start-box {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.start-box h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.start-box p {
-    font-size: 18px;
-    color: #444;
-}
-
-/* ============================================
-   Songliste – 2 Spalten Desktop, 1 Spalte Handy
-   ============================================ */
-.songlist {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 20px;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.songlist li {
-    list-style: none;
-    margin: 4px 0;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-
-/* ============================================
-   Download-Button
-   ============================================ */
-.download-btn {
-    background-color: #0077cc;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 0.9em;
-}
-
-/* ============================================
-   Footer
-   ============================================ */
-footer {
-    margin-top: 40px;
-    font-size: 12px;
-    color: #555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.footer-copy {
-    margin: 0;
-}
-
-/* ============================================
    Handy-Optimierung
    ============================================ */
 @media (max-width: 600px) {
-    /* Regeln */
-}
 
     .main-nav ul {
         flex-direction: column;
@@ -152,5 +24,6 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
