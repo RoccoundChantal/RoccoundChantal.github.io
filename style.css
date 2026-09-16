@@ -179,5 +179,54 @@ footer {
     flex-wrap: nowrap;      /* verhindert den Umbruch */
     gap: 15px;
     justify-content: center;
-    margin-top
+    margin-top: 20px;
+}
+
+.cover-gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ============================================
+   Handy-Optimierung
+   ============================================ */
+@media (max-width: 600px) {
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .songlist {
+        grid-template-columns: 1fr;
+    }
+
+    .header-img {
+        max-height: 180px;
+    }
+
+    .start-images img {
+        width: calc(50% - 10px);
+    }
+
+    .start-box h1 {
+        font-size: 22px;
+    }
+
+    .start-box p {
+        font-size: 16px;
+    }
+
+    .cover-gallery {
+        flex-wrap: wrap; /* Handy darf umbrechen */
+    }
+
+    .cover-gallery img {
+        width: 45%;
+        height: auto;
+    }
+}
+
 
