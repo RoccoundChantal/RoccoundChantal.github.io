@@ -91,6 +91,18 @@
     </header>
 
     <!-- ============================
+         STARTKICK (Header-Reload)
+         ============================ -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const headerImg = document.querySelector(".header-img");
+        if (headerImg && headerImg.complete === false) {
+            headerImg.src = headerImg.src.split("?")[0] + "?v=" + Date.now();
+        }
+    });
+    </script>
+
+    <!-- ============================
          2. NAVIGATION
          ============================ -->
     <nav class="main-nav">
@@ -141,3 +153,4 @@
 
 </body>
 </html>
+
