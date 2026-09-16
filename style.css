@@ -183,14 +183,14 @@ footer {
 .cover-gallery {
     display: flex;
     flex-wrap: nowrap;
-    gap: 5px; /* WICHTIG: damit 5 Cover reinpassen */
+    gap: 5px;
     justify-content: center;
     margin-top: 20px;
 }
 
 .cover-gallery img {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 12px;
 }
