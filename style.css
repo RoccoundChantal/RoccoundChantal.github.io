@@ -58,9 +58,10 @@
 .datenschutz .main-nav a[href="datenschutz.html"] {
     color: red;
 }
+
 /* Navigation Schriftfarbe */
 .main-nav a {
-    color: white;          /* Schrift IMMER weiß */
+    color: white;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -68,10 +69,11 @@
 
 /* Aktiver Menüpunkt */
 .main-nav a.active {
-    background-color: #c00;   /* Rot */
-    color: white;             /* Schrift bleibt weiß */
+    background-color: #c00;
+    color: white;
     border-radius: 6px;
 }
+
 /* ============================================
    Startseite – Cover-Galerie (4 Cover)
    ============================================ */
@@ -157,61 +159,25 @@ footer {
 }
 
 /* ============================================
-   Handy-Optimierung
-   ============================================ */
-@media (max-width: 600px) {
-
-    .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .songlist {
-        grid-template-columns: 1fr;
-    }
-
-    .header-img {
-        max-height: 180px;
-    }
-
-    .start-images img {
-        width: calc(50% - 10px);
-    }
-
-    .start-box h1 {
-        font-size: 22px;
-    }
-
-    .start-box p {
-        font-size: 16px;
-    }
-   /* ============================================
    Header + Cover: gleiche Breite + runde Ecken
    ============================================ */
 .header-img,
 .start-images img {
     width: 100%;
-    max-width: 300px; /* gleiche Breite für alle */
-    border-radius: 12px; /* abgerundete Ecken */
+    max-width: 300px;
+    border-radius: 12px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
-}/* ============================================
+}
+
+/* ============================================
    Startseite – Cover-Galerie (5 Cover in einer Reihe)
    ============================================ */
 .cover-gallery {
     display: flex;
     flex-wrap: nowrap;      /* verhindert den Umbruch */
-    gap: 15px;              /* Abstand zwischen den Bildern */
-    justify-content: center;/* zentriert die gesamte Reihe */
-    margin-top: 20px;
-}
-
-.cover-gallery img {
-    width: 180px;           /* feste Breite für alle Cover */
-    height: 180px;          /* feste Höhe für quadratische Cover */
-    object-fit: cover;      /* sauberer Zuschnitt */
-    border-radius: 12px;    /* leichte Abrundung */
-}
-}
+    gap: 15px;
+    justify-content: center;
+    margin-top
 
