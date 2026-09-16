@@ -74,11 +74,15 @@
     background-color: #333;
     padding: 10px;
     border-radius: 6px;
-    margin-top: 5px;
+    margin-top: 0;      /* WICHTIG: keine Lücke */
+    top: 100%;          /* direkt unter dem Button */
+    left: 0;
     min-width: 180px;
 }
 
-.main-nav ul li:hover ul {
+/* Dropdown bleibt offen */
+.main-nav ul li:hover > ul,
+.main-nav ul li ul:hover {
     display: block;
 }
 
@@ -94,9 +98,6 @@
 }
 
 /* ============================================
-   Startseite – Cover-Galerie (5 Cover)
-   ============================================ */
-/* ============================================
    Willkommen-Text zentrieren
    ============================================ */
 .content-box {
@@ -109,7 +110,27 @@
     margin: 10px auto;
 }
 
+/* ============================================
+   Startseite – Cover-Galerie (5 Cover)
+   ============================================ */
+.cover-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.cover-gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ============================================
+   Startseite – Cover-Galerie (4 Cover)
+   ============================================ */
 .start-images {
     display: flex;
     flex-wrap: wrap;
@@ -192,24 +213,6 @@ footer {
 }
 
 /* ============================================
-   Startseite – Cover-Galerie (5 Cover)
-   ============================================ */
-.cover-gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 5px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.cover-gallery img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-/* ============================================
    Handy-Optimierung
    ============================================ */
 @media (max-width: 600px) {
@@ -248,5 +251,3 @@ footer {
         height: auto;
     }
 }
-
-
