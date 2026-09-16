@@ -56,7 +56,20 @@
 .datenschutz .main-nav a[href="datenschutz.html"] {
     color: red;
 }
+/* Navigation Schriftfarbe */
+.main-nav a {
+    color: white;          /* Schrift IMMER weiß */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
 
+/* Aktiver Menüpunkt */
+.main-nav a.active {
+    background-color: #c00;   /* Rot */
+    color: white;             /* Schrift bleibt weiß */
+    border-radius: 6px;
+}
 /* ============================================
    Startseite – Cover-Galerie (4 Cover)
    ============================================ */
