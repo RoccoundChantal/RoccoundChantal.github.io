@@ -211,6 +211,15 @@ footer {
 .footer-copy {
     margin: 0;
 }
+body.hoffnung ul.songlist li a {
+    display: inline-block;
+    width: 40ch;          /* ca. 40 Zeichen */
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
 
 /* ============================================
    Handy-Optimierung
