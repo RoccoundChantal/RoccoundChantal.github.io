@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocco & Chantal – Musik</title>
 
-    <!-- Externe CSS – einzig gültige Formatierung -->
+    <!-- ============================ EXTERNE CSS ============================ -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
 <div class="page-wrapper">
 
-    <!-- ============================
-         1. HEADER
-         ============================ -->
+    <!-- ============================ 1. HEADER ============================ -->
     <header>
         <img src="start-cover.jpg" alt="Header" class="header-img">
     </header>
-    <!-- ============================
-         4. WILLKOMMEN-TEXT
-         ============================ -->
+
+    <!-- ============================ 4. WILLKOMMEN-TEXT ============================ -->
     <div class="content-box">
         <h2>Willkommen bei Rocco & Chantal</h2>
         <p>Unsere Musik verbindet Gefühl und Leidenschaft – von modernen Country‑Sounds bis zu klassischen Balladen.</p>
@@ -29,72 +25,44 @@
         <p>Viel Spaß beim Entdecken und Hören!</p>
     </div>
 
-    <!-- ============================
-         STARTKICK (Header-Reload)
-         ============================ -->
+    <!-- ============================ STARTKICK (Header-Reload) ============================ -->
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const headerImg = document.querySelector(".header-img");
-        if (headerImg) {
-            headerImg.src = headerImg.src.split("?")[0] + "?v=" + Date.now();
-        }
-    });
+        document.addEventListener("DOMContentLoaded", () => {
+            const headerImg = document.querySelector(".header-img");
+            if (headerImg) {
+                headerImg.src = headerImg.src.split("?")[0] + "?v=" + Date.now();
+            }
+        });
     </script>
 
-    <!-- ============================
-         2. NAVIGATION
-         ============================ -->
+    <!-- ============================ 2. NAVIGATION ============================ -->
     <nav class="main-nav">
-    <ul>
-        <li><a href="index.html" class="active">Start</a></li>
+        <ul>
 
-      <li>
-    <a href="songs.html">Lieder</a>
-    <ul>
-       <li><a href="Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
-        <li><a href="klassik.html">Klassik</a></li>
-        <li><a href="rock.html">Rock’n’Roll</a></li>
-        <li><a href="sonstige.html">Sonstige Lieder</a></li>
-    </ul>
-</li>
+            <!-- Startseite -->
+            <li><a href="index.html" class="active">Start</a></li>
 
-        <li><a href="news.html">News</a></li>
-        <li><a href="Datenschutz.html">Datenschutz</a></li>
-        <li><a href="Impressum.html">Impressum</a></li>
-        <li><a href="login.html">Login</a></li>
-    </ul>
-</nav>
+            <!-- Lieder (NICHT anklickbar) -->
+            <li>
+                <span class="menu-title">Lieder</span>
+                <ul>
+                    <li><a href="Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
+                    <li><a href="klassik.html">Klassik</a></li>
+                    <li><a href="rock.html">Rock’n’Roll</a></li>
+                    <li><a href="sonstige.html">Sonstige Lieder</a></li>
+                </ul>
+            </li>
 
-    <!-- ============================
-         3. COVER-GALERIE
-         ============================ -->
-    <h2 style="text-align:center; margin-top:20px;">Beispiele unserer Cover</h2>
+            <!-- Weitere Menüpunkte -->
+            <li><a href="news.html">News</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="login.html">Login</a></li>
 
-    <div class="cover-gallery">
-        <img src="bilder/cover1.jpg" alt="Cover 1">
-        <img src="bilder/cover2.jpg" alt="Cover 2">
-        <img src="bilder/cover3.jpg" alt="Cover 3">
-        <img src="bilder/cover4.jpg" alt="Cover 4">
-        <img src="bilder/cover5.jpg" alt="Cover 5">
-    </div>
-
-
-
-    <!-- ============================
-         5. FOOTER
-         ============================ -->
-    <footer>
-        <div class="footer-left">
-            <a href="Impressum.html" class="footer-link">Impressum</a> |
-            <a href="Datenschutz.html" class="footer-link">Datenschutz</a>
-        </div>
-        <p>&copy; 2026 Rocco & Chantal</p>
-    </footer>
+        </ul>
+    </nav>
 
 </div>
-
-<script src="login.js"></script>
-
 </body>
 </html>
 
