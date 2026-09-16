@@ -13,9 +13,9 @@
    ============================================ */
 .header-img {
     width: 100%;
-    height: auto;        /* Bild bleibt dynamisch */
-    min-height: 250px;   /* verhindert "schmalen" Header */
-    object-fit: cover;   /* füllt den Bereich sauber */
+    height: auto;
+    min-height: 250px;
+    object-fit: cover;
     border-radius: 12px;
     display: block;
 }
