@@ -13,9 +13,11 @@
    ============================================ */
 .header-img {
     width: 100%;
-    height: auto;
-    max-height: 280px;
-    object-fit: cover;
+    height: auto;        /* Bild bleibt dynamisch */
+    min-height: 250px;   /* verhindert "schmalen" Header */
+    object-fit: cover;   /* füllt den Bereich sauber */
+    border-radius: 12px;
+    display: block;
 }
 
 /* ============================================
