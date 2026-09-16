@@ -165,7 +165,7 @@ footer {
 .cover-gallery {
     display: flex;
     flex-wrap: nowrap;      /* verhindert den Umbruch */
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
     margin-top: 20px;
 }
