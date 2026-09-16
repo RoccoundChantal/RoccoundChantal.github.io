@@ -63,7 +63,7 @@
 .start-cover {
     width: 100%;
     height: 280px;
-    background-image: url("bilder/cover1.jpg"); /* identisch wie andere Seiten: per CSS gesteuert */
+    background-image: url("bilder/cover1.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 6px;
@@ -167,6 +167,7 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
 
