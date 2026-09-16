@@ -1,12 +1,5 @@
-<!-- ============================================
-   1. Dokumenttyp & Sprache
-   ============================================ -->
 <!DOCTYPE html>
 <html lang="de">
-
-<!-- ============================================
-   2. HEAD-BEREICH (Meta, Titel, CSS)
-   ============================================ -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,71 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- ============================================
-   3. BODY-START + Seitenklasse
-   ============================================ -->
-<body class="startseite">
+<body>
 
-<!-- ============================================
-   4. SEITEN-WRAPPER (Layout-Rahmen)
-   ============================================ -->
 <div class="page-wrapper">
 
-    <!-- ============================================
-         5. HEADER-BEREICH (Großes Titelbild)
-         ============================================ -->
+    <!-- ============================
+         1. HEADER
+         ============================ -->
     <header>
-        <img src="header2.jpg" alt="Header" class="header-img">
+        <img src="header1.jpg" alt="Header" style="width:100%; height:auto;">
     </header>
 
-    <!-- ============================================
-         6. COVER-GALERIE (4 Cover nebeneinander)
-         ============================================ -->
-    <div class="start-images">
+    <!-- ============================
+         2. NAVIGATION
+         ============================ -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Startseite</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============================
+         3. LOGIN-BEREICH
+         ============================ -->
+    <button onclick="login()" class="login-btn">Login</button>
+
+    <!-- ============================
+         4. NACHRICHTEN
+         ============================ -->
+    <div id="news" class="protected hidden news-box">
+        <h2>Aktuelle Nachrichten</h2>
+        <p>Hier stehen deine Nachrichten…</p>
+    </div>
+
+    <!-- ============================
+         5. COVER-GALERIE
+         ============================ -->
+    <h2 style="text-align:center; margin-top:20px;">Unsere Cover</h2>
+    <div class="cover-gallery">
         <img src="bilder/cover1.jpg" alt="Cover 1">
         <img src="bilder/cover2.jpg" alt="Cover 2">
         <img src="bilder/cover3.jpg" alt="Cover 3">
         <img src="bilder/cover4.jpg" alt="Cover 4">
     </div>
 
-    <!-- ============================================
-         7. WILLKOMMEN-BOX
-         ============================================ -->
-    <div class="content-box" style="text-align:center; margin-top:10px;">
+    <!-- ============================
+         6. WILLKOMMEN-TEXT
+         ============================ -->
+    <div class="content-box">
         <h2>Willkommen bei Rocco & Chantal</h2>
-        <p>Bitte wählt euer Lieblings-Genre und schaut öfter vorbei, ständig kommen neue Lieder hinzu.</p>
+        <p>Bitte wählt euer Lieblings‑Genre und schaut öfter vorbei – ständig kommen neue Lieder hinzu.</p>
+        <p>Unsere Musik verbindet Gefühl und Leidenschaft – von modernen Country‑Sounds bis zu klassischen Balladen.
+           Viel Spaß beim Entdecken und Hören!</p>
     </div>
 
-    <!-- ============================================
-         8. NAVIGATION
-         ============================================ -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
-            <li><a href="Klassik/index.html">Klassik</a></li>
-            <li><a href="Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-        </ul>
-    </nav>
-
-    <!-- ============================================
-         9. FOOTER
-         ============================================ -->
+    <!-- ============================
+         7. FOOTER
+         ============================ -->
     <footer>
-        <p class="footer-copy">© 2026 Rocco & Chantal</p>
+        <div class="footer-left">
+            <a href="Impressum.html" class="footer-link">Impressum</a> |
+            <a href="Datenschutz.html" class="footer-link">Datenschutz</a>
+        </div>
+        <p>&copy; 2026 Rocco & Chantal</p>
     </footer>
 
 </div>
 
-<!-- ============================================
-   10. JS für "neu"-Anzeige (optional)
-   ============================================ -->
-<script src="neu.js"></script>
+<script src="login.js"></script>
 
-<!-- ============================================
-   11. BODY- UND HTML-ABSCHLUSS
-   ============================================ -->
 </body>
 </html>
