@@ -128,10 +128,8 @@ footer {
    Handy-Optimierung
    ============================================ */
 @media (max-width: 600px) {
-
-    .desktop-only {
-        display: none;
-    }
+    /* Regeln */
+}
 
     .main-nav ul {
         flex-direction: column;
