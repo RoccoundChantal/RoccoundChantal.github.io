@@ -107,8 +107,8 @@
 }
 
 .content-box p {
-    max-width: 600px;
     margin: 10px auto;
+    white-space: nowrap;   /* verhindert Umbruch */
 }
 
 /* ============================================
