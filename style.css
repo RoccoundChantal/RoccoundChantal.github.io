@@ -1,74 +1,257 @@
 /* ============================================
-   AKTIVER MENÜPUNKT (ROT)
+   Grundlayout
    ============================================ */
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* ============================================
+   Header-Bild – Start-Cover (volle Breite)
+   ============================================ */
+.header-img {
+    width: 100%;
+    max-width: 1200px;   /* gleiche Breite wie die 5 Cover */
+    margin: 0 auto;      /* zentriert */
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+/* ============================================
+   Navigation – Hauptmenü
+   ============================================ */
+.main-nav {
+    margin: 20px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li {
+    position: relative; /* WICHTIG für Dropdown */
+}
+
+/* Buttons – Standard */
+.main-nav ul li a {
+    background-color: rgba(0,0,0,0.4); /* dezent sichtbar */
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Hover */
+.main-nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: white !important;
+}
+
+/* Aktiver Menüpunkt */
 .main-nav a.active {
-    background-color: red;
+    background-color: #c00;
     color: white !important;
     border-radius: 6px;
 }
 
 /* ============================================
-   HL – SONG-LISTE (Layout)
-   NUR auf HL-Seite aktiv!
+   Dropdown unter „Lieder“
    ============================================ */
-body.hoffnung .songlist {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px 20px;
+.main-nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 0;      /* WICHTIG: keine Lücke */
+    top: 100%;          /* direkt unter dem Button */
+    left: 0;
+    min-width: 180px;
 }
 
-body.hoffnung .songlist li {
+/* Dropdown bleibt offen */
+.main-nav ul li:hover > ul,
+.main-nav ul li ul:hover {
+    display: block;
+}
+
+.main-nav ul li ul li a {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: white !important;
+    white-space: nowrap;
+}
+
+.main-nav ul li ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* ============================================
+   Willkommen-Text zentrieren
+   ============================================ */
+.content-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-box p {
+    margin: 10px auto;
+    white-space: nowrap;   /* verhindert Umbruch */
+}
+
+/* ============================================
+   Startseite – Cover-Galerie (5 Cover)
+   ============================================ */
+.cover-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cover-gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ============================================
+   Startseite – Cover-Galerie (4 Cover)
+   ============================================ */
+.start-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.start-images img {
+    width: calc(25% - 10px);
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* ============================================
+   Startseite – Begrüßungsbox
+   ============================================ */
+.start-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.start-box h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.start-box p {
+    font-size: 18px;
+    color: #444;
+}
+
+/* ============================================
+   Songliste – 2 Spalten Desktop, 1 Spalte Handy
+   ============================================ */
+.songlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.songlist li {
     list-style: none;
-    margin: 8px 0;
+    margin: 4px 0;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
 
 /* ============================================
-   HL – Liedtitel mit fester Breite (Tabellenoptik)
+   Download-Button
    ============================================ */
-body.hoffnung .songlist li a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    width: 40ch;              /* feste Zeilenlänge */
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-/* ============================================
-   HL – DOWNLOAD-BUTTON hinter jedem Song
-   ============================================ */
-body.hoffnung .download-btn {
+.download-btn {
     background-color: #0077cc;
     color: white;
     padding: 4px 8px;
-    margin-left: 12px;
     border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px;
     font-size: 0.9em;
-    cursor: pointer;
-    display: inline-block;
 }
 
 /* ============================================
-   HL – NEU-BADGE (automatisch per neu.js)
+   Footer
    ============================================ */
-body.hoffnung .neu {
-    background: red;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
+footer {
+    margin-top: 40px;
     font-size: 12px;
-    margin-left: 12px;
-    display: inline-block;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.footer-copy {
+    margin: 0;
 }
 
 /* ============================================
-   ABSTAND UNTER NAVIGATION
+   Handy-Optimierung
    ============================================ */
-.main-nav {
-    margin-bottom: 20px;
+@media (max-width: 600px) {
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .songlist {
+        grid-template-columns: 1fr;
+    }
+
+    .header-img {
+        max-height: 180px;
+    }
+
+    .start-images img {
+        width: calc(50% - 10px);
+    }
+
+    .start-box h1 {
+        font-size: 22px;
+    }
+
+    .start-box p {
+        font-size: 16px;
+    }
+
+    .cover-gallery {
+        flex-wrap: wrap;
+    }
+
+    .cover-gallery img {
+        width: 45%;
+        height: auto;
+    }
 }
+
 
 
