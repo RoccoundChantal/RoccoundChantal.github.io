@@ -185,18 +185,24 @@
     text-decoration: none;
 }
 /* ============================================
-   Menüpunkt "Lieder" – NICHT anklickbar, grau hinterlegt
+   Menüpunkt "Lieder" – NICHT anklickbar, aber wie Button
    ============================================ */
 .menu-title {
-    background-color: rgba(0,0,0,0.4); /* gleiche Farbe wie die anderen Buttons */
+    background-color: rgba(0,0,0,0.4);
     color: white;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 6px;
     display: block;
-    cursor: default; /* NICHT anklickbar */
-    text-align: center;
+    cursor: default;
 }
+
+/* Hover-Effekt wie bei den anderen Buttons */
+.menu-title:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
 
 /* ============================================
    Download-Button (grün mit Icon)
