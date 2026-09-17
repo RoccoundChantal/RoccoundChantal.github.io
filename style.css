@@ -18,13 +18,13 @@ header {
 
 .header-img {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px;   /* gleiche Breite wie die Seite */
     height: auto;
-    margin: 0 auto 20px;
+    margin: 0 auto;      /* zentriert */
     display: block;
-    border-radius: 12px;
     object-fit: cover;
 }
+
 
 /* ============================================
    Navigation – Hauptmenü (ohne Dropdown-Zauber)
