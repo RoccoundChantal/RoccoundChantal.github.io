@@ -106,6 +106,113 @@
 }
 
 /* ============================================
+   Grundlayout
+   ============================================ */
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* ============================================
+   Header-Bild
+   ============================================ */
+.header-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ============================================
+   Navigation – Hauptmenü
+   ============================================ */
+.main-nav {
+    margin: 20px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+/* Hauptbuttons */
+.main-nav ul li a,
+.menu-title {
+    background-color: rgba(0,0,0,0.4);
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Hover – Buttons bleiben sichtbar */
+.main-nav ul li a:hover,
+.menu-title:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: white !important;
+}
+
+/* Aktiver Menüpunkt */
+.main-nav a.active {
+    background-color: #c00;
+    color: white !important;
+}
+
+/* Lieder-Button (optisch wie Button, aber normales Element) */
+.menu-title {
+    cursor: default;
+}
+
+/* ============================================
+   Dropdown unter „Lieder“
+   ============================================ */
+.main-nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+
+    /* keine Hover-Lücke */
+    top: calc(100% - 1px);
+    left: 0;
+
+    min-width: 180px;
+    z-index: 999;
+}
+
+/* Dropdown bleibt offen */
+.main-nav ul li:hover > ul,
+.main-nav ul li ul:hover {
+    display: block;
+}
+
+.main-nav ul li ul li a {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: white !important;
+    white-space: nowrap;
+}
+
+.main-nav ul li ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* ============================================
    Willkommen-Text
    ============================================ */
 .content-box {
@@ -117,6 +224,136 @@
     margin: 10px auto;
     white-space: normal; /* wieder normaler Zeilenumbruch */
 }
+
+/* ============================================
+   Startseite – Cover-Galerie (5 Cover)
+   ============================================ */
+.cover-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cover-gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ============================================
+   Startseite – zusätzliche Bilder
+   ============================================ */
+.start-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.start-images img {
+    width: calc(25% - 10px);
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* ============================================
+   Startseite – Begrüßungsbox
+   ============================================ */
+.start-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.start-box h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.start-box p {
+    font-size: 18px;
+    color: #444;
+}
+
+/* ============================================
+   Lieder-Seite – 2 Spalten, keine Zeilenabstände
+   ============================================ */
+#songlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+    gap: 0px; /* kein Abstand zwischen den Zeilen */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#songlist li {
+    background: #f4f4f4;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#songlist li a:first-child {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ============================================
+   Download-Button (grün mit Icon)
+   ============================================ */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #27ae60;
+}
+
+.download-btn::before {
+    content: "⬇";
+    font-size: 16px;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.footer-copy {
+    margin: 0;
+}
+
+/* ============================================
+   Handy-Optimierung
+   ============================================ */
+/* (hier kannst du später Media Queries ergänzen) */
+
 
 /* ============================================
    Startseite – Cover-Galerie (5 Cover)
