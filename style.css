@@ -2,10 +2,8 @@
    Grundlayout
    ============================================ */
 .page-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+    max-width: 1200px;   /* oder 1000px, wenn du es schmaler willst */
+    margin: 0 auto;      /* zentriert die komplette Seite */
 }
 
 /* ============================================
