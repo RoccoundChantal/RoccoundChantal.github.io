@@ -1,18 +1,34 @@
+<!-- ============================================
+   1. Dokumenttyp & Sprache
+   ============================================ -->
 <!DOCTYPE html>
 <html lang="de">
+
+<!-- ============================================
+   2. HEAD-BEREICH (Meta, Titel, CSS)
+   ============================================ -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RocknRoll – Rocco & Chantal</title>
+    <title>Hoffnungs‑Lieder</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
 
-<div class="page-wrapper">
+<!-- ============================================
+   3. BODY-START + Seitenklasse
+   ============================================ -->
+<body class="hoffnung">
 
-    <img src="../start-cover.jpg" alt="Start Cover" class="header-img">
+<!-- ============================================
+   4. HEADER-BEREICH (Großes Titelbild)
+   ============================================ -->
+<header>
+    <img src="../cover-start.jpg" alt="Startcover" class="header-img">
+</header>
 
-  <nav class="main-nav">
+<!-- ============================================
+   5. NAVIGATION
+   ============================================ -->
+<nav class="main-nav">
     <ul>
         <li><a href="../index.html">Startseite</a></li>
         <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
@@ -23,17 +39,40 @@
     </ul>
 </nav>
 
-    <h1>RocknRoll</h1>
+<!-- ============================================
+   6. SEITENTITEL
+   ============================================ -->
+<h1>Hoffnungs‑Lieder</h1>
 
-    <p>Hier erscheinen deine englischen Songs.</p>
+<!-- ============================================
+   Rechtlicher Hinweis (NEU EINGEFÜGT)
+   ============================================ -->
+<p style="font-size:14px; color:#555; margin-bottom:20px;">
+    Alle Rechte vorbehalten, nur für den persönlichen Gebrauch.
+</p>
 
-</div>
+<!-- ============================================
+   7. SONG-LISTE MIT Download + "neu"
+   ============================================ -->
+<ul id="songlist"></ul>
+<script src="songs.js"></script>
 
+<!-- ============================================
+   8. FOOTER
+   ============================================ -->
 <footer>
-    <div class="footer-left"></div>
-    <p>&copy; 2026 Rocco & Chantal</p>
+    <div class="footer-left">
+        <p class="footer-copy">© 2026 Rocco & Chantal</p>
+    </div>
 </footer>
+
+<!-- ============================================
+   9. JS für "neu"-Anzeige
+   ============================================ -->
+<script src="../neu.js"></script>
 
 </body>
 </html>
+
+
 
