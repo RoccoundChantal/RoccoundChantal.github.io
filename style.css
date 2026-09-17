@@ -70,11 +70,16 @@
     background-color: #333;
     padding: 10px;
     border-radius: 6px;
-    top: 100%;
+
+    /* WICHTIG: Dropdown direkt unter den Button setzen */
+    top: calc(100% - 2px);   /* verhindert die Hover-Lücke */
     left: 0;
+
     min-width: 180px;
+    z-index: 999;            /* verhindert Überlappungsfehler */
 }
 
+/* Dropdown bleibt offen */
 .main-nav ul li:hover > ul,
 .main-nav ul li ul:hover {
     display: block;
@@ -91,7 +96,6 @@
     background-color: rgba(255,255,255,0.2);
 }
 
-/* ============================================
    Willkommen-Text
    ============================================ */
 .content-box {
