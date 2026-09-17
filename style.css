@@ -191,6 +191,7 @@
 /* ============================================
    Menüpunkt "Lieder" – NICHT anklickbar, aber wie Button
    ============================================ */
+/* Lieder-Button wie echter Menübutton */
 .menu-title {
     background-color: rgba(0,0,0,0.4);
     color: white;
@@ -201,10 +202,33 @@
     cursor: default;
 }
 
-/* Hover-Effekt wie bei den anderen Buttons */
+/* Klick deaktivieren */
+.no-click {
+    pointer-events: none;
+}
+
+/* Hover wie bei den anderen Buttons */
 .menu-title:hover {
     background-color: rgba(255,255,255,0.2);
-    color: white;
+}
+
+/* Dropdown direkt unter den Button setzen */
+.main-nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    top: calc(100% - 1px);
+    left: 0;
+    min-width: 180px;
+    z-index: 999;
+}
+
+/* Dropdown bleibt offen */
+.main-nav ul li:hover > ul,
+.main-nav ul li ul:hover {
+    display: block;
 }
 
 
