@@ -1,13 +1,5 @@
 const songs = [
-    "Alles was ich bin.mp3",
-    "Babylon du große Stadt.mp3",
-    "Dein Geist berührt mich.mp3",
-    "Die Neue Welt.mp3",
-    "Die Wahrheit brennt_F, Remake.mp3",
-    "Die Wahrheit brennt_M.mp3",
-    "Du darfst das verstehn.mp3",
-    "Du gibst Hoffnung.mp3",
-    "Durch deinen Sohn.mp3"
+
 ];
 
 const list = document.getElementById("songlist");
