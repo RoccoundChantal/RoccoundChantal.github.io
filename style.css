@@ -11,17 +11,12 @@
 /* ============================================
    Header-Bild – gleiche Breite wie Cover-Galerie
    ============================================ */
-header {
-    max-width: 900px;     /* gleiche Breite wie die Cover */
-    margin: 0 auto;       /* zentriert */
-}
-
 .header-img {
     width: 100%;
     height: auto;
+    margin: 0 auto 20px;
     display: block;
     border-radius: 12px;
-    margin-bottom: 20px;
 }
 
 /* ============================================
