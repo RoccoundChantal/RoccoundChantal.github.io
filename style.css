@@ -9,12 +9,6 @@
 /* ============================================
    Header-Bild – exakt gleiche Breite wie Cover
    ============================================ */
-    <header>
-        <img src="start-cover.jpg" alt="Header" class="header-img">
-    position: relative;
-    z-index: 1;
-}
-
 .header-img {
     width: 100%;
     max-width: 1200px;   /* gleiche Breite wie die Seite */
