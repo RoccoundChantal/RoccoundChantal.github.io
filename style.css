@@ -27,12 +27,10 @@ header {
 }
 
 /* ============================================
-   Navigation – Hauptmenü
+   Navigation – Hauptmenü (ohne Dropdown-Zauber)
    ============================================ */
 .main-nav {
     margin: 20px 0;
-    position: relative;
-    z-index: 2; /* Navigation über dem Header */
 }
 
 .main-nav ul {
@@ -46,14 +44,13 @@ header {
 }
 
 .main-nav ul li {
-    position: relative;
+    position: static; /* kein Dropdown, keine Überlagerung */
 }
 
 /* Hauptbuttons */
-.main-nav ul li a,
-.menu-title {
+.main-nav ul li a {
     background-color: rgba(0,0,0,0.4);
-    color: white !important;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -62,21 +59,15 @@ header {
 }
 
 /* Hover – Buttons bleiben sichtbar */
-.main-nav ul li a:hover,
-.menu-title:hover {
+.main-nav ul li a:hover {
     background-color: rgba(255,255,255,0.2);
-    color: white !important;
+    color: white;
 }
 
 /* Aktiver Menüpunkt */
 .main-nav a.active {
     background-color: #c00;
-    color: white !important;
-}
-
-/* Lieder-Button */
-.menu-title {
-    cursor: default;
+    color: white;
 }
 
 /* ============================================
