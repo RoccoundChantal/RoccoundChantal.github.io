@@ -16,14 +16,15 @@
 <!-- ============================================
    3. BODY-START + Seitenklasse
    ============================================ -->
-<body class="klassik">
+<body class="hoffnung">
 
-<!-- ============================================
-   4. HEADER-BEREICH (Großes Titelbild)
-   ============================================ -->
-<header>
-    <img src="../cover-start.jpg" alt="Startcover" class="header-img">
-</header>
+ <!-- ============================
+         1. HEADER
+         ============================ -->
+    <header>
+        <img src="start-cover.jpg" alt="Header" class="header-img">
+    </header>
+
 
 <!-- ============================================
    5. NAVIGATION
@@ -39,12 +40,10 @@
     </ul>
 </nav>
 
-
-
 <!-- ============================================
-    6. SEITENTITEL
+   6. SEITENTITEL
    ============================================ -->
-<h1>Hoffnungs‑Lieder</h1>
+<h1>Klassik</h1>
 
 <!-- ============================================
    Rechtlicher Hinweis (NEU EINGEFÜGT)
@@ -69,17 +68,8 @@
 </footer>
 
 <!-- ============================================
-   9. JS: Klick auf Song + "neu"-Anzeige
+   9. JS für "neu"-Anzeige
    ============================================ -->
-<script>
-document.querySelectorAll('.songlist li').forEach(item => {
-    item.addEventListener('click', () => {
-        const file = item.getAttribute('data-file');
-        window.location.href = file;
-    });
-});
-</script>
-
 <script src="../neu.js"></script>
 
 </body>
