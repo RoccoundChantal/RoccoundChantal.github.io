@@ -123,7 +123,7 @@
 }
 
 /* ============================================
-   Startseite – Cover-Galerie (4 Cover)
+   Startseite – Cover-Galerie (5 Cover)
    ============================================ */
 .start-images {
     display: flex;
@@ -158,23 +158,25 @@
 }
 
 /* ============================================
-   Automatische Songliste – Formatierung
+   Lieder-Seite – 2 Spalten, keine Zeilenabstände
    ============================================ */
 #songlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+    gap: 0px; /* KEIN Abstand zwischen den Zeilen */
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 0;
 }
 
 #songlist li {
+    background: #f4f4f4;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 0; /* kein Abstand */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
-    margin-bottom: 6px;
-    background: #f4f4f4;
-    border-radius: 6px;
-    font-size: 16px;
 }
 
 #songlist li a:first-child {
