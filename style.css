@@ -13,12 +13,13 @@
    ============================================ */
 .header-img {
     width: 100%;
+    max-width: 1200px;   /* gleiche Breite wie die Seite */
     height: auto;
     margin: 0 auto 20px;
     display: block;
     border-radius: 12px;
+    object-fit: cover;
 }
-
 /* ============================================
    Navigation – Hauptmenü
    ============================================ */
@@ -220,9 +221,14 @@
     margin-top: 20px;
 }
 
+.content-box h2 {
+    text-align: center;
+}
+
 .content-box p {
     margin: 10px auto;
-    white-space: normal; /* wieder normaler Zeilenumbruch */
+    white-space: normal;
+    text-align: center;
 }
 
 /* ============================================
