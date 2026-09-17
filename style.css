@@ -40,7 +40,9 @@
     position: relative;
 }
 
-.main-nav ul li a {
+/* WICHTIG: Buttons dürfen NICHT verschwinden */
+.main-nav ul li a,
+.menu-title {
     background-color: rgba(0,0,0,0.4);
     color: white !important;
     text-decoration: none;
@@ -50,16 +52,25 @@
     display: block;
 }
 
-.main-nav ul li a:hover {
+/* Hover – Buttons bleiben sichtbar */
+.main-nav ul li a:hover,
+.menu-title:hover {
     background-color: rgba(255,255,255,0.2);
     color: white !important;
 }
 
+/* Aktiver Menüpunkt */
 .main-nav a.active {
     background-color: #c00;
     color: white !important;
     border-radius: 6px;
 }
+
+/* Lieder NICHT anklickbar */
+.menu-title {
+    pointer-events: none;
+}
+
 
 /* ============================================
    Dropdown unter „Lieder“
