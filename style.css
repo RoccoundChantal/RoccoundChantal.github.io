@@ -184,6 +184,19 @@
     color: #333;
     text-decoration: none;
 }
+/* ============================================
+   Menüpunkt "Lieder" – NICHT anklickbar, grau hinterlegt
+   ============================================ */
+.menu-title {
+    background-color: rgba(0,0,0,0.4); /* gleiche Farbe wie die anderen Buttons */
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+    cursor: default; /* NICHT anklickbar */
+    text-align: center;
+}
 
 /* ============================================
    Download-Button (grün mit Icon)
