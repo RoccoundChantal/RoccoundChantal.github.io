@@ -165,20 +165,28 @@
 /* ============================================
    Songliste – 2 Spalten Desktop, 1 Spalte Handy
    ============================================ */
-.songlist {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 20px;
+/* Automatische Songliste – saubere Formatierung */
+#songlist {
+    list-style: none;
     padding: 0;
     margin: 20px 0;
 }
 
-.songlist li {
-    list-style: none;
-    margin: 4px 0;
-    font-size: 18px;
+#songlist li {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    background: #f4f4f4;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#songlist li a:first-child {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
 }
 
 /* ============================================
