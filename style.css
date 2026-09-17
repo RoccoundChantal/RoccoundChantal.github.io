@@ -82,12 +82,12 @@
     padding: 10px;
     border-radius: 6px;
 
-    /* WICHTIG: Dropdown direkt unter den Button setzen */
-    top: calc(100% - 2px);   /* verhindert die Hover-Lücke */
+    /* WICHTIG: keine Hover-Lücke */
+    top: calc(100% - 1px);
     left: 0;
 
     min-width: 180px;
-    z-index: 999;            /* verhindert Überlappungsfehler */
+    z-index: 999;
 }
 
 /* Dropdown bleibt offen */
