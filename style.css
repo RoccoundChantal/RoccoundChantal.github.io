@@ -11,7 +11,7 @@
    ============================================ */
 .header-img {
     width: 100%;
-    max-width: 1200px;   /* gleiche Breite wie die Seite */
+    max-width: 1180px;   /* gleiche Breite wie die Seite */
     height: auto;
     margin: 0 auto;      /* zentriert */
     display: block;
