@@ -2,7 +2,7 @@
    Grundlayout
    ============================================ */
 .page-wrapper {
-    max-width: 1160px;   
+    max-width: 1120px;   
     margin: 0 auto;      /* zentriert die komplette Seite */
 }
 
@@ -11,7 +11,7 @@
    ============================================ */
 .header-img {
     width: 100%;
-    max-width: 1160px;   /* gleiche Breite wie die Seite */
+    max-width: 1120px;   /* gleiche Breite wie die Seite */
     height: auto;
     margin: 0 auto;      /* zentriert */
     display: block;
