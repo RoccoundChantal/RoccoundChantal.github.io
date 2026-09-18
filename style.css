@@ -44,18 +44,17 @@
 
 /* Hauptbuttons */
 .main-nav ul li a {
-    background-color: rgba(0,0,0,0.4);
+    background-color: #444;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
     padding: 10px 15px;
     border-radius: 6px;
-    display: block;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
 }
 
-/* Hover – Buttons bleiben sichtbar */
 .main-nav ul li a:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: #666;
     color: white;
 }
 
