@@ -4,12 +4,11 @@ const songs = [
     "../mp3-Dateien/Am liebsten bin ich glücklich_engl.mp3",
     "../mp3-Dateien/Bald wird alles gut_engl.mp3",
     "../mp3-Dateien/Bevor die Welt im Feuer steht_engl.mp3",
-    "../mp3-Dateien/Bleib bei mir_engl.mp3",
-
+    "../mp3-Dateien/Bleib bei mir_engl.mp3"
 ];
 
-// Listelement aus der HTML holen
-const list = document.getElementById("songlist");
+// Listelement aus der HTML holen (RICHTIGE ID!)
+const list = document.getElementById("songs");
 
 // Jeden Song als Listeneintrag erzeugen
 songs.forEach(song => {
