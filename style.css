@@ -36,6 +36,9 @@ h1, h2, h3, p, li, a, span {
     object-fit: cover;
     border-radius: 20px;
 }
+.header-img {
+    background: #ffffff !important; /* Entfernt graue Fläche um das Bild */
+}
 
 /* ============================================
    Navigation – dunkel + gold
