@@ -2,7 +2,6 @@
 body, p, li, h1, h2, h3 {
     line-height: 1.3 !important;
 }
-
 /* ============================================
    GLOBAL – alles weiß, keine Rahmen, einheitliche Schrift
    ============================================ */
@@ -17,13 +16,11 @@ html, body {
 h1, h2, h3, p, li, a, span {
     color: #000000 !important;
 }
-
 /* Seitenbreite */
 .page-wrapper {
     max-width: 900px;
     margin: 0 auto;
 }
-
 /* ============================================
    Header-Bild – ohne graue Box
    ============================================ */
@@ -36,15 +33,6 @@ h1, h2, h3, p, li, a, span {
     object-fit: cover;
     border-radius: 20px;
 }
-
-/* Entfernt den dunklen Rahmen hinter Header + Navigation */
-.page-wrapper,
-header,
-.main-nav {
-    background: #ffffff !important;
-    border: none !important;
-}
-
 /* ============================================
    Navigation – dunkel + gold
    ============================================ */
@@ -58,7 +46,6 @@ header,
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .main-nav ul li a {
     background-color: #222;
     color: #ffd700;
@@ -100,7 +87,6 @@ header,
     background-color: transparent;
     color: #ffd700 !important;
 }
-
 /* ============================================
    Willkommen-Box – weiß, keine graue Fläche
    ============================================ */
@@ -112,11 +98,9 @@ header,
     border-radius: 10px;
     border: none !important;
 }
-
 .content-box h2 {
     color: #000000 !important;
 }
-
 /* ============================================
    Cover-Galerie – weiß, keine graue Fläche
    ============================================ */
@@ -129,7 +113,6 @@ header,
     background: #ffffff !important;
     border: none !important;
 }
-
 .cover-gallery img {
     width: 220px;
     height: 220px;
