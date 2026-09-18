@@ -1,11 +1,46 @@
 // Songliste für dieses Genre
-const songs = [
-    "../txt/Alle Menschen sind bald Brüder_engl.mp3",
-    "../txt/Am liebsten bin ich glücklich_engl.mp3",
-    "../txt/Bald wird alles gut_engl.mp3",
-    "../txt/Bevor die Welt im Feuer steht_engl.mp3",
-    "../txt/Bleib bei mir_engl.mp3"
-];
+<style>
+    body {
+        background-color: #222;
+        color: #eee;
+        font-family: Arial, sans-serif;
+    }
+
+    #songlist {
+        list-style: none;
+        padding: 0;
+        margin: 20px;
+    }
+
+    #songlist li {
+        margin: 4px 0;        /* kompakter */
+        padding: 6px 10px;    /* angenehme Höhe */
+        background: #333;     /* dunkler Block */
+        border-radius: 4px;
+    }
+
+    #songlist a {
+        color: #ffd700;       /* goldene Links wie deine Typografie */
+        text-decoration: none;
+        margin-right: 12px;
+    }
+
+    #songlist a:hover {
+        text-decoration: underline;
+    }
+
+    .download-btn {
+        color: #fff;
+        background: #555;
+        padding: 3px 8px;
+        border-radius: 3px;
+    }
+
+    .download-btn:hover {
+        background: #777;
+    }
+</style>
+
 
 // Listelement aus der HTML holen
 const list = document.getElementById("songlist");
