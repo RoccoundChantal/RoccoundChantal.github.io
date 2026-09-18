@@ -242,4 +242,28 @@ footer {
    Handy-Optimierung
    ============================================ */
 /* hier kannst du später Media Queries ergänzen */
+/* ============================================
+   Mobile Navigation – unter 600px
+   ============================================ */
+@media (max-width: 600px) {
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .main-nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 20px;
+        background-color: #444;
+        border-radius: 8px;
+    }
+
+    .main-nav ul li a:hover {
+        background-color: #666;
+    }
+}
 
