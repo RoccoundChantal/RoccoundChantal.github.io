@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html lang="de">
-<style>
-    body {
-        background-color: #222;
-        color: #eee;
-        font-family: Arial, sans-serif;
-    }
-
-    #songlist {
-        list-style: none;
-        padding: 0;
-        margin: 20px;
-    }
-
-    #songlist li {
-        margin: 4px 0;        /* kompakter */
-        padding: 6px 10px;    /* angenehme Höhe */
-        background: #333;     /* dunkler Block */
-        border-radius: 4px;
-    }
-
-    #songlist a {
-        color: #ffd700;       /* goldene Links wie deine Typografie */
-        text-decoration: none;
-        margin-right: 12px;
-    }
-
-    #songlist a:hover {
-        text-decoration: underline;
-    }
-
-    .download-btn {
-        color: #fff;
-        background: #555;
-        padding: 3px 8px;
-        border-radius: 3px;
-    }
-
-    .download-btn:hover {
-        background: #777;
-    }
-</style>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Englische Songs – Rocco & Chantal</title>
 
-    <!-- Stylesheet eine Ebene höher -->
-    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            background-color: #222;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #ffd700;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        #songlist {
+            list-style: none;
+            padding: 0;
+            margin: 20px;
+        }
+
+        #songlist li {
+            margin: 4px 0;
+            padding: 6px 10px;
+            background: #333;
+            border-radius: 4px;
+        }
+
+        #songlist a {
+            color: #ffd700;
+            text-decoration: none;
+            margin-right: 12px;
+        }
+
+        #songlist a:hover {
+            text-decoration: underline;
+        }
+
+        .download-btn {
+            color: #fff;
+            background: #555;
+            padding: 3px 8px;
+            border-radius: 3px;
+        }
+
+        .download-btn:hover {
+            background: #777;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #ccc;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="page-wrapper">
-
-    <!-- ============================
-         HEADER
-         ============================ -->
-    <header>
-        <img src="../start-cover.jpg" alt="Header" class="header-img">
-    </header>
-
-    <!-- ============================
-         NAVIGATION (modern)
-         ============================ -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="../index.html">Startseite</a></li>
-            <li><a href="../Englische-Songs/index.html" class="active">Englische Songs</a></li>
-            <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs-Lieder</a></li>
-            <li><a href="../Klassik/index.html">Klassik</a></li>
-            <li><a href="../RocknRoll/index.html">RocknRoll</a></li>
-            <li><a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html">Startseite</a>
+        <a href="../Englische-Songs/index.html">Englische Songs</a>
+        <a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a>
+        <a href="../Klassik/index.html">Klassik</a>
+        <a href="../RocknRoll/index.html">Rock’n’Roll</a>
+        <a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a>
     </nav>
 
-    <!-- ============================
-         SONG-LISTE
-         ============================ -->
-<ul id="songlist"></ul>
-<script src="songs.js"></script>
+    <!-- WICHTIG: Platzhalter für die Songliste -->
+    <ul id="songlist"></ul>
 
-    <!-- ============================
-         FOOTER
-         ============================ -->
+    <!-- Script -->
+    <script src="songs.js"></script>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Rocco & Chantal</p>
+        © 2026 Rocco & Chantal
     </footer>
-
-</div>
 
 </body>
 </html>
-
