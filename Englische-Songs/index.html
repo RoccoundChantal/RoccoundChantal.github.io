@@ -2,77 +2,51 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Englische Songs – Rocco & Chantal</title>
+    <title>Hoffnungs‑Lieder – Rocco & Chantal</title>
 
     <style>
-        body {
-            background-color: #222;
-            color: #eee;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        body { background:#222; color:#eee; font-family:Arial; margin:0; }
+        nav { background:#333; padding:10px; }
+        nav a { color:#ffd700; margin-right:15px; text-decoration:none; }
+        nav a:hover { text-decoration:underline; }
 
-        nav {
-            background: #333;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #ffd700;
-            margin-right: 15px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* 2‑Spalten‑Layout */
         #songlist {
-            list-style: none;
-            padding: 0;
-            margin: 20px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px 20px;
+            list-style:none;
+            padding:0;
+            margin:20px;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:10px 20px;
         }
 
         #songlist li {
-            background: #333;
-            padding: 6px 10px;
-            border-radius: 4px;
+            background:#333;
+            padding:6px 10px;
+            border-radius:4px;
         }
 
         #songlist a {
-            color: #ffd700;
-            text-decoration: none;
-            margin-right: 12px;
+            color:#ffd700;
+            text-decoration:none;
+            margin-right:12px;
         }
 
-        #songlist a:hover {
-            text-decoration: underline;
-        }
-
-        /* Goldener Download‑Button */
         .download-btn {
-            color: #222;
-            background: #ffd700;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-weight: bold;
+            color:#222;
+            background:#ffd700;
+            padding:3px 8px;
+            border-radius:3px;
+            font-weight:bold;
         }
 
-        .download-btn:hover {
-            background: #ffea6a;
-        }
+        .download-btn:hover { background:#ffea6a; }
 
         footer {
-            margin-top: 40px;
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #ccc;
+            margin-top:40px;
+            text-align:center;
+            padding:10px;
+            background:#333;
+            color:#ccc;
         }
     </style>
 </head>
@@ -92,9 +66,7 @@
 
     <script src="songs.js"></script>
 
-    <footer>
-        © 2026 Rocco & Chantal
-    </footer>
+    <footer>© 2026 Rocco & Chantal</footer>
 
 </body>
 </html>
