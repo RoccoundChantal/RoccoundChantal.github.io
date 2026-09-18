@@ -1,79 +1,71 @@
-<!-- ============================================
-   1. Dokumenttyp & Sprache
-   ============================================ -->
 <!DOCTYPE html>
 <html lang="de">
-
-<!-- ============================================
-   2. HEAD-BEREICH (Meta, Titel, CSS)
-   ============================================ -->
 <head>
     <meta charset="UTF-8">
-    <title>Englische Lieder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Englische Songs – Rocco & Chantal</title>
+
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<!-- ============================================
-   3. BODY-START + Seitenklasse
-   ============================================ -->
-<body class="hoffnung">
+<body>
 
-<!-- ============================================
-   4. HEADER-BEREICH (Großes Titelbild)
-   ============================================ -->
+<div class="page-wrapper">
+
+    <!-- ============================
+         HEADER
+         ============================ -->
     <header>
-        <img src="start-cover.jpg" alt="Header" class="header-img">
+        <img src="../start-cover.jpg" alt="Header" class="header-img">
     </header>
 
-<!-- ============================================
-   5. NAVIGATION
-   ============================================ -->
-<nav class="main-nav">
-    <ul>
-        <li><a href="../index.html">Startseite</a></li>
-        <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
-        <li><a href="../Klassik/index.html">Klassik</a></li>
-        <li><a href="../Sonstige-Lieder/index.html">Sonstige</a></li>
-        <li><a href="../RocknRoll/index.html">Rock'n'Roll</a></li>
-        <li><a href="../Englische-Lieder/index.html">Englische Lieder</a></li>
-    </ul>
-</nav>
+    <!-- ============================
+         NAVIGATION (modern)
+         ============================ -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="../Hoffnungs-Lieder/index.html">Lieder</a></li>
+            <li><a href="../Sonstige-Lieder/index.html">News</a></li>
+            <li><a href="../Klassik/index.html">Angebote</a></li>
+            <li><a href="index.html" class="active">Englische Songs</a></li>
+            <li><a href="../impressum.html">Impressum</a></li>
+            <li><a href="../datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </nav>
 
-<!-- ============================================
-    6. SEITENTITEL
-   ============================================ -->
-<h1>Hoffnungs‑Lieder</h1>
-
-<!-- ============================================
-   Rechtlicher Hinweis (NEU EINGEFÜGT)
-   ============================================ -->
-<p style="font-size:14px; color:#555; margin-bottom:20px;">
-    Alle Rechte vorbehalten, nur für den persönlichen Gebrauch.
-</p>
-
-<!-- ============================================
-   7. SONG-LISTE MIT Download + "neu"
-   ============================================ -->
-<ul id="songlist"></ul>
-<script src="songs.js"></script>
-
-<!-- ============================================
-   8. FOOTER
-   ============================================ -->
-<footer>
-    <div class="footer-left">
-        <p class="footer-copy">© 2026 Rocco & Chantal</p>
+    <!-- ============================
+         INHALT
+         ============================ -->
+    <div class="content-box">
+        <h2>Englische Songs</h2>
+        <p>Hier findet ihr unsere englischen Songs – modern, emotional und perfekt für internationale Musikfreunde.</p>
+        <p>Diese Seite wird regelmäßig erweitert. Neue Titel kommen laufend hinzu.</p>
     </div>
-</footer>
 
-<!-- ============================================
-   9. JS für "neu"-Anzeige
-   ============================================ -->
-<script src="../neu.js"></script>
+    <!-- ============================
+         COVER-GALERIE
+         ============================ -->
+    <h2 style="text-align:center; margin-top:20px;">Englische Cover</h2>
+
+    <div class="cover-gallery">
+        <img src="../bilder/cover1.jpg" alt="Cover 1">
+        <img src="../bilder/cover2.jpg" alt="Cover 2">
+        <img src="../bilder/cover3.jpg" alt="Cover 3">
+        <img src="../bilder/cover4.jpg" alt="Cover 4">
+    </div>
+
+    <!-- ============================
+         FOOTER
+         ============================ -->
+    <footer>
+        <p>&copy; 2026 Rocco & Chantal</p>
+    </footer>
+
+</div>
 
 </body>
 </html>
-
 
 
 
