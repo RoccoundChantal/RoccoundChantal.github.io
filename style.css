@@ -16,6 +16,9 @@
     margin: 0 auto;      /* zentriert */
     display: block;
     object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden; /* wichtig, damit das Bild nicht übersteht */
+}
 }
 
 
