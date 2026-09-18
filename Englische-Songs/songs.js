@@ -1,16 +1,4 @@
 // Englische Songs – komplette Liste
-const list = document.getElementById("songlist");
-
-songs.forEach(song => {
-    const li = document.createElement("li");
-    const title = song.split("/").pop().replace(".mp3", "");
-
-    li.innerHTML = `
-        <a href="${song}">${title}</a>
-        <a href="${song}" download class="download-btn">Download</a>
-    `;
-    list.appendChild(li);
-});
 const songs = [
     "../txt/Alle Menschen sind bald Brüder_engl.mp3",
     "../txt/Am liebsten bin ich glücklich_engl.mp3",
@@ -109,7 +97,16 @@ const songs = [
     "../txt/Wilde Pferde ziehn mich heim_engl.mp3"
 ];
 
+// Liste erzeugen
+const list = document.getElementById("songlist");
 
+songs.forEach(song => {
+    const li = document.createElement("li");
+    const title = song.split("/").pop().replace(".mp3", "");
+
+    li.innerHTML = `
+        <a href="${song}">${title}</a>
+        <a href="${song}" download class="download-btn">Download</a>
+    `;
     list.appendChild(li);
 });
-
