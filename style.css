@@ -243,6 +243,12 @@ footer {
     align-items: center;
     padding: 5px 0;
 }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    opacity: 0.8;
+}
 
 .footer-copy {
     margin: 0;
