@@ -7,14 +7,13 @@ const songs = [
     "../mp3-Dateien/Bleib bei mir_engl.mp3"
 ];
 
-// Listelement aus der HTML holen (RICHTIGE ID!)
-const list = document.getElementById("songs");
+// Listelement aus der HTML holen – ID MUSS zu HTML passen!
+const list = document.getElementById("songlist");
 
 // Jeden Song als Listeneintrag erzeugen
 songs.forEach(song => {
     const li = document.createElement("li");
 
-    // Dateiname ohne Ordner und ohne .mp3
     const title = song.split("/").pop().replace(".mp3", "");
 
     li.innerHTML = `
