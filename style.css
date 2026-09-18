@@ -36,9 +36,7 @@ h1, h2, h3, p, li, a, span {
     object-fit: cover;
     border-radius: 20px;
 }
-.header-img {
-    background: #ffffff !important; /* Entfernt graue Fläche um das Bild */
-}
+
 /* Entfernt den dunklen Rahmen hinter Header + Navigation */
 .page-wrapper,
 header,
@@ -50,12 +48,7 @@ header,
 /* ============================================
    Navigation – dunkel + gold
    ============================================ */
-.main-nav {
-    margin: 10px 0;
-    background: #ffffff !important; /* Entfernt graue Box */
 }
-
-
 .main-nav ul {
     list-style: none;
     padding: 0;
