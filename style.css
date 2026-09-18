@@ -93,9 +93,9 @@ h1, h2, h3, p, li, span {
    ============================================ */
 .content-box {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
     background: #ffffff !important;
-    padding: 20px;
+    padding: 20x;
     border-radius: 10px;
     border: none !important;
 }
