@@ -10,11 +10,13 @@ body {
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: #222;
-    color: #eee;
-    font-family: Arial, sans-serif;
+    background-color: #111 !important;
+    color: #eee !important;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 }
 /* Einheitliche Textfarbe für die gesamte Seite */
 h1, h2, h3, p, li, a, span {
