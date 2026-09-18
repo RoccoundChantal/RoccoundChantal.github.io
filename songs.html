@@ -40,7 +40,7 @@
          ============================ -->
     <div class="content-box">
         <h2>Song‑Katalog</h2>
-        <p>Hier findest du alle Songs, sortiert nach Genre. Jede Kategorie öffnet eine eigene Seite mit MP3‑Player und Cover‑Galerie.</p>
+        <p>Hier findest du alle Songs, sortiert nach Genre. Die MP3‑Dateien werden automatisch aus GitHub geladen.</p>
     </div>
 
     <!-- ============================
@@ -59,21 +59,13 @@
     </div>
 
     <!-- ============================
-         MP3-HINWEIS
+         AUTOMATISCHE MP3-LISTE
          ============================ -->
+    <h2 style="text-align:center; margin-top:20px;">Alle MP3‑Dateien</h2>
+
     <div class="content-box">
-        <h3>MP3‑Struktur</h3>
-        <p>Alle MP3‑Dateien liegen in den jeweiligen Genre‑Ordnern:</p>
-
-        <ul>
-            <li>Hoffnungs-Lieder/mp3-Dateien/</li>
-            <li>Klassik/mp3-Dateien/</li>
-            <li>RocknRoll/mp3-Dateien/</li>
-            <li>Englische-Songs/mp3-Dateien/</li>
-            <li>Sonstige-Lieder/mp3-Dateien/</li>
-        </ul>
-
-        <p>Wenn du möchtest, kann ich dir eine automatische MP3‑Liste bauen, die die Dateien direkt aus GitHub lädt.</p>
+        <p>Die Liste wird automatisch aus GitHub geladen.</p>
+        <ul id="mp3list"></ul>
     </div>
 
     <!-- ============================
@@ -85,5 +77,41 @@
 
 </div>
 
-</body>
-</html>
+<!-- ============================
+     SCRIPT: AUTOMATISCHE MP3-LISTE
+     ============================ -->
+<script>
+// Automatische MP3-Liste für alle Genres
+
+async function loadMP3List() {
+    const genres = [
+        "Hoffnungs-Lieder",
+        "Klassik",
+        "RocknRoll",
+        "Englische-Songs",
+        "Sonstige-Lieder"
+    ];
+
+    const listElement = document.getElementById("mp3list");
+
+    for (const genre of genres) {
+        const url = `https://raw.githubusercontent.com/RoccoundChantal/RoccoundChantal.github.io/main/${genre}/mp3.txt`;
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) continue;
+
+            const text = await response.text();
+            const files = text.split("\n").filter(line => line.trim() !== "");
+
+            // Genre-Überschrift
+            const genreHeader = document.createElement("h3");
+            genreHeader.textContent = genre.replace("-", " ");
+            listElement.appendChild(genreHeader);
+
+            // MP3-Liste
+            files.forEach(file => {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    🎵 ${file}
+
