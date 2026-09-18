@@ -39,6 +39,13 @@ h1, h2, h3, p, li, a, span {
 .header-img {
     background: #ffffff !important; /* Entfernt graue Fläche um das Bild */
 }
+/* Entfernt den dunklen Rahmen hinter Header + Navigation */
+.page-wrapper,
+header,
+.main-nav {
+    background: #ffffff !important;
+    border: none !important;
+}
 
 /* ============================================
    Navigation – dunkel + gold
