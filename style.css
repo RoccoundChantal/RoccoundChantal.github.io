@@ -1,12 +1,5 @@
 /* ============================================
-   Kompakte Zeilenhöhe
-   ============================================ */
-body, p, li, h1, h2, h3 {
-    line-height: 1.3 !important;
-}
-
-/* ============================================
-   GLOBAL – alles weiß, einheitliche Schrift
+   GLOBAL – weißer Hintergrund, einheitliche Schrift
    ============================================ */
 html, body {
     background-color: #ffffff !important;
@@ -14,6 +7,11 @@ html, body {
     font-family: Arial, Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
+}
+
+/* Kompakte Zeilenhöhe */
+body, p, li, h1, h2, h3 {
+    line-height: 1.3 !important;
 }
 
 /* Standard-Textfarbe */
@@ -28,7 +26,7 @@ h1, h2, h3, p, li, span {
 }
 
 /* ============================================
-   Header-Bild – ohne graue Box
+   Header-Bild
    ============================================ */
 .header-img {
     width: 100%;
@@ -101,27 +99,23 @@ h1, h2, h3, p, li, span {
 }
 
 /* ============================================
-   Willkommen-Box – weiß, kompakt
+   Willkommen-Box
    ============================================ */
 .content-box {
     text-align: center;
-    margin-top: 5px !important; /* Leerzeile entfernt */
+    margin-top: 5px !important;
     background: #ffffff !important;
-    padding: 20px;              /* Tippfehler korrigiert */
+    padding: 20px;
     border-radius: 10px;
     border: none !important;
 }
 
 .content-box p {
-    margin-top: 0 !important; /* verhindert zusätzliche Leerzeile */
-}
-
-.content-box h2 {
-    color: #000000 !important;
+    margin-top: 0 !important;
 }
 
 /* ============================================
-   Cover-Galerie – weiß
+   Cover-Galerie
    ============================================ */
 .cover-gallery {
     display: flex;
@@ -141,17 +135,7 @@ h1, h2, h3, p, li, span {
 }
 
 /* ============================================
-   Unterseiten komplett weiß
-   ============================================ */
-.page-wrapper,
-.content-box,
-footer {
-    background: #ffffff !important;
-    border: none !important;
-}
-
-/* ============================================
-   Footer – weiß
+   Footer
    ============================================ */
 footer {
     margin-top: 40px;
