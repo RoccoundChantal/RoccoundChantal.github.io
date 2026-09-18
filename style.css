@@ -48,26 +48,26 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Navigation – dunkel + gold
+   Navigation – dunkel + gold (bereinigt)
    ============================================ */
 .main-nav {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .main-nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 5px 0;
     display: flex;
-    gap: 20px;
+    gap: 10px;              /* enger */
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .main-nav ul li a {
-    background-color: #333;
+    background-color: #222; /* statt #333, passt zum Dark-Mode */
     color: #ffd700;
-    padding: 10px 15px;
+    padding: 8px 12px;      /* enger */
     border-radius: 6px;
     text-decoration: none;
     display: inline-block;
@@ -75,20 +75,20 @@ h1, h2, h3, p, li, a, span {
 }
 
 .main-nav ul li a:hover {
-    background-color: #555;
+    background-color: #444; /* etwas heller als #222, aber nicht zu hell */
 }
 
 .main-nav a.active {
     background-color: #c00;
-    color: white;
+    color: #fff;
 }
 
 /* Dropdown */
 .main-nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #333;
-    padding: 10px;
+    background-color: #222; /* gleich wie Hauptnav */
+    padding: 8px;
     border-radius: 6px;
     top: calc(100% - 1px);
     left: 0;
@@ -101,7 +101,7 @@ h1, h2, h3, p, li, a, span {
 }
 
 .main-nav ul li ul li a {
-    padding: 8px 12px;
+    padding: 6px 10px;
     background-color: transparent;
     color: #ffd700 !important;
 }
