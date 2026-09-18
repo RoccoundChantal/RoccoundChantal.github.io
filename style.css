@@ -16,7 +16,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* Einheitliche Textfarbe für die gesamte Seite */
+h1, h2, h3, p, li, a, span {
+    color: #eee !important;
+}
 .page-wrapper {
     max-width: 900px;
     margin: 0 auto;
