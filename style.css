@@ -136,6 +136,13 @@ h1, h2, h3, p, li, a, span {
     object-fit: cover;
     border-radius: 12px;
 }
+/* Unterseiten komplett weiß */
+.page-wrapper,
+.content-box,
+footer {
+    background: #ffffff !important;
+    border: none !important;
+}
 
 /* ============================================
    Footer – weiß, keine graue Fläche
