@@ -1,28 +1,37 @@
 /* ============================================
    Grundlayout
    ============================================ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
 .page-wrapper {
-    max-width: 900px;   
-    margin: 0 auto;      /* zentriert die komplette Seite */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* ============================================
-   Header-Bild – exakt gleiche Breite wie Cover
+   Header-Bild
    ============================================ */
 .header-img {
     width: 100%;
-    max-width: 900px;   /* gleiche Breite wie die Seite */
+    max-width: 900px;
     height: auto;
-    margin: 0 auto;      /* zentriert */
+    margin: 0 auto;
     display: block;
     object-fit: cover;
     border-radius: 20px;
-    overflow: hidden; /* wichtig, damit das Bild nicht übersteht */
+    overflow: hidden;
 }
 
 
 /* ============================================
-   Navigation – Hauptmenü (ohne Dropdown-Zauber)
+   Navigation – Hauptmenü
    ============================================ */
 .main-nav {
     margin: 20px 0;
@@ -39,7 +48,7 @@
 }
 
 .main-nav ul li {
-    position: static; /* kein Dropdown, keine Überlagerung */
+    position: static;
 }
 
 /* Hauptbuttons */
@@ -53,6 +62,7 @@
     font-weight: bold;
 }
 
+/* Hover */
 .main-nav ul li a:hover {
     background-color: #666;
     color: white;
@@ -241,9 +251,8 @@ footer {
 /* ============================================
    Handy-Optimierung
    ============================================ */
-/* hier kannst du später Media Queries ergänzen */
 /* ============================================
-   Mobile Navigation – unter 600px
+   Mobile Navigation
    ============================================ */
 @media (max-width: 600px) {
 
@@ -264,6 +273,41 @@ footer {
 
     .main-nav ul li a:hover {
         background-color: #666;
+    }
+}
+/* ============================================
+   Mobile Text
+   ============================================ */
+@media (max-width: 600px) {
+    .page-wrapper {
+        padding: 0 15px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+/* ============================================
+   Mobile Header-Bild
+   ============================================ */
+@media (max-width: 600px) {
+    .header-img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+}
+/* ============================================
+   Mobile Cover-Galerie
+   ============================================ */
+@media (max-width: 600px) {
+    .cover-gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 12px;
     }
 }
 
