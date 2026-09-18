@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Englische Songs – Rocco & Chantal</title>
 
+    <!-- Stylesheet eine Ebene höher -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -22,26 +23,25 @@
     <!-- ============================
          NAVIGATION (modern)
          ============================ -->
-  <nav class="main-nav">
-    <ul>
-        <li><a href="../index.html">Startseite</a></li>
-        <li><a href="../Englische-Songs/index.html" class="active">Englische Songs</a></li>
-        <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs-Lieder</a></li>
-        <li><a href="../Klassik/index.html">Klassik</a></li>
-        <li><a href="../RocknRoll/index.html">RocknRoll</a></li>
-        <li><a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
-     
-    </ul>
-</nav>
-
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="../Englische-Songs/index.html" class="active">Englische Songs</a></li>
+            <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs-Lieder</a></li>
+            <li><a href="../Klassik/index.html">Klassik</a></li>
+            <li><a href="../RocknRoll/index.html">RocknRoll</a></li>
+            <li><a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
+        </ul>
+    </nav>
 
     <!-- ============================
-         SONG-LISTE (WICHTIG!)
+         SONG-LISTE
          ============================ -->
     <main>
-        <div id="songs">
-            <script src="songs.js"></script>
-        </div>
+        <div id="songs"></div>
+
+        <!-- WICHTIG: songs.js liegt eine Ebene höher -->
+        <script src="../songs.js"></script>
     </main>
 
     <!-- ============================
@@ -55,6 +55,3 @@
 
 </body>
 </html>
-
-
-
