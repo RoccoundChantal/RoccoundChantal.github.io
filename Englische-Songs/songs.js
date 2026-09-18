@@ -1,11 +1,5 @@
 // Songliste für dieses Genre
 const songs = [
-// Songliste für dieses Genre
-const songs = [
-    // Songliste für dieses Genre
-const songs = [
-// Songliste für dieses Genre
-const songs = [
     "mp3-Dateien/Alle Menschen sind bald Brüder_engl.mp3",
     "mp3-Dateien/Am liebsten bin ich glücklich_engl.mp3",
     "mp3-Dateien/Bald wird alles gut_engl.mp3",
