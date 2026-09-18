@@ -2,7 +2,7 @@
    Grundlayout
    ============================================ */
 .page-wrapper {
-    max-width: 1120px;   
+    max-width: 900px;   
     margin: 0 auto;      /* zentriert die komplette Seite */
 }
 
