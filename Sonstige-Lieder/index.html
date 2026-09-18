@@ -2,54 +2,71 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonstige Lieder – Rocco & Chantal</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <style>
+        body { background:#222; color:#eee; font-family:Arial; margin:0; }
+        nav { background:#333; padding:10px; }
+        nav a { color:#ffd700; margin-right:15px; text-decoration:none; }
+        nav a:hover { text-decoration:underline; }
+
+        #songlist {
+            list-style:none;
+            padding:0;
+            margin:20px;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:10px 20px;
+        }
+
+        #songlist li {
+            background:#333;
+            padding:6px 10px;
+            border-radius:4px;
+        }
+
+        #songlist a {
+            color:#ffd700;
+            text-decoration:none;
+            margin-right:12px;
+        }
+
+        .download-btn {
+            color:#222;
+            background:#ffd700;
+            padding:3px 8px;
+            border-radius:3px;
+            font-weight:bold;
+        }
+
+        .download-btn:hover { background:#ffea6a; }
+
+        footer {
+            margin-top:40px;
+            text-align:center;
+            padding:10px;
+            background:#333;
+            color:#ccc;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="page-wrapper">
+    <nav>
+        <a href="../index.html">Startseite</a>
+        <a href="../Englische-Songs/index.html">Englische Songs</a>
+        <a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a>
+        <a href="../Klassik/index.html">Klassik</a>
+        <a href="../RocknRoll/index.html">Rock’n’Roll</a>
+        <a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a>
+    </nav>
 
-    <!-- ============================
-         HEADER
-         ============================ -->
-    <header>
-        <img src="../start-cover.jpg" alt="Header" class="header-img">
-    </header>
+    <ul id="songlist"></ul>
 
-    <!-- ============================
-         NAVIGATION (modern)
-         ============================ -->
-<nav class="main-nav">
-    <ul>
-         <li><a href="../index.html">Startseite</a></li>
-        <li><a href="../Englische-Songs/index.html">Englische Songs</a></li>
-        <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs-Lieder</a></li>
-        <li><a href="../Klassik/index.html">Klassik</a></li>
-        <li><a href="../RocknRoll/index.html">RocknRoll</a></li>
-        <li><a href="../Sonstige-Lieder/index.html" class="active">Sonstige Lieder</a></li>
-    </ul>
-</nav>
+    <script src="songs.js"></script>
 
-    <!-- ============================
-         SONG-LISTE (WICHTIG!)
-         ============================ -->
-    <main>
-        <div id="songs">
-            <script src="songs.js"></script>
-        </div>
-    </main>
-   
-    <!-- ============================
-         FOOTER
-         ============================ -->
-    <footer>
-        <p>&copy; 2026 Rocco & Chantal</p>
-    </footer>
-
-</div>
+    <footer>© 2026 Rocco & Chantal</footer>
 
 </body>
 </html>
