@@ -1,3 +1,7 @@
+/* Kompakte Zeilenhöhe für die gesamte Seite */
+body, p, li, h1, h2, h3 {
+    line-height: 1.3 !important;
+}
 /* ============================================
    GLOBAL – alles weiß, keine Rahmen, einheitliche Schrift
    ============================================ */
