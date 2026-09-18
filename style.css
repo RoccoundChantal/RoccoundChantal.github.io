@@ -2,26 +2,28 @@
    Grundlayout – komplett dunkel
    ============================================ */
 }
-/* GANZE SEITE DUNKEL */
+/* GLOBAL – alles weiß, keine Rahmen */
 html, body {
-    background-color: #111 !important;
-    color: #eee !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
     margin: 0;
     padding: 0;
-   body {
-    background-color: #222 !important;
-    color: #eee;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
 }
-body {
-    background-color: #111 !important;
-    color: #eee !important;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+
+/* Alle Boxen weiß */
+.content-box,
+.cover-gallery,
+footer {
+    background: #ffffff !important;
+    border: none !important;
 }
+
+/* Navigation bleibt dunkel */
+.main-nav ul li a {
+    background-color: #222;
+    color: #ffd700;
+}
+
 
 }
 /* Einheitliche Textfarbe für die gesamte Seite */
