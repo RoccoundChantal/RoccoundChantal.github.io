@@ -1,40 +1,36 @@
 /* ============================================
-   GLOBAL – alles weiß, keine Rahmen
+   GLOBAL – alles weiß, keine Rahmen, einheitliche Schrift
    ============================================ */
-/* Einheitliche Schriftart für die gesamte Seite */
-html, body {
-    font-family: Arial, Helvetica, sans-serif !important;
-}
-
 html, body {
     background-color: #ffffff !important;
     color: #000000 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
 }
 
-/* Einheitliche Textfarbe */
+/* Standard-Textfarbe */
 h1, h2, h3, p, li, a, span {
     color: #000000 !important;
 }
 
+/* Seitenbreite */
 .page-wrapper {
     max-width: 900px;
     margin: 0 auto;
 }
 
 /* ============================================
-   Header-Bild
+   Header-Bild – ohne graue Box
    ============================================ */
 .header-img {
     width: 100%;
     max-width: 900px;
     height: auto;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
     object-fit: cover;
     border-radius: 20px;
-    overflow: hidden;
 }
 
 /* ============================================
@@ -42,6 +38,7 @@ h1, h2, h3, p, li, a, span {
    ============================================ */
 .main-nav {
     margin: 10px 0;
+    background: #ffffff !important; /* Entfernt graue Box */
 }
 
 .main-nav ul {
@@ -97,7 +94,7 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Willkommen-Text – jetzt weiß
+   Willkommen-Box – weiß, keine graue Fläche
    ============================================ */
 .content-box {
     text-align: center;
@@ -113,7 +110,7 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Cover-Galerie – jetzt weiß
+   Cover-Galerie – weiß, keine graue Fläche
    ============================================ */
 .cover-gallery {
     display: flex;
@@ -133,7 +130,7 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Footer – jetzt weiß
+   Footer – weiß, keine graue Fläche
    ============================================ */
 footer {
     margin-top: 40px;
