@@ -1,8 +1,6 @@
 /* ============================================
-   Grundlayout – komplett dunkel
+   GLOBAL – alles weiß, keine Rahmen
    ============================================ */
-}
-/* GLOBAL – alles weiß, keine Rahmen */
 html, body {
     background-color: #ffffff !important;
     color: #000000 !important;
@@ -10,26 +8,11 @@ html, body {
     padding: 0;
 }
 
-/* Alle Boxen weiß */
-.content-box,
-.cover-gallery,
-footer {
-    background: #ffffff !important;
-    border: none !important;
-}
-
-/* Navigation bleibt dunkel */
-.main-nav ul li a {
-    background-color: #222;
-    color: #ffd700;
-}
-
-
-}
-/* Einheitliche Textfarbe für die gesamte Seite */
+/* Einheitliche Textfarbe */
 h1, h2, h3, p, li, a, span {
-    color: #eee !important;
+    color: #000000 !important;
 }
+
 .page-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -50,7 +33,7 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Navigation – dunkel + gold (bereinigt)
+   Navigation – dunkel + gold
    ============================================ */
 .main-nav {
     margin: 10px 0;
@@ -61,15 +44,15 @@ h1, h2, h3, p, li, a, span {
     padding: 0;
     margin: 5px 0;
     display: flex;
-    gap: 10px;              /* enger */
+    gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .main-nav ul li a {
-    background-color: #222; /* statt #333, passt zum Dark-Mode */
+    background-color: #222;
     color: #ffd700;
-    padding: 8px 12px;      /* enger */
+    padding: 8px 12px;
     border-radius: 6px;
     text-decoration: none;
     display: inline-block;
@@ -77,7 +60,7 @@ h1, h2, h3, p, li, a, span {
 }
 
 .main-nav ul li a:hover {
-    background-color: #444; /* etwas heller als #222, aber nicht zu hell */
+    background-color: #444;
 }
 
 .main-nav a.active {
@@ -89,7 +72,7 @@ h1, h2, h3, p, li, a, span {
 .main-nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #222; /* gleich wie Hauptnav */
+    background-color: #222;
     padding: 8px;
     border-radius: 6px;
     top: calc(100% - 1px);
@@ -109,22 +92,23 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Willkommen-Text – dunkel
+   Willkommen-Text – jetzt weiß
    ============================================ */
 .content-box {
     text-align: center;
     margin-top: 20px;
-    background: #333;
+    background: #ffffff !important;
     padding: 20px;
     border-radius: 10px;
+    border: none !important;
 }
 
 .content-box h2 {
-    color: #ffd700;
+    color: #000000 !important;
 }
 
 /* ============================================
-   Cover-Galerie – dunkel
+   Cover-Galerie – jetzt weiß
    ============================================ */
 .cover-gallery {
     display: flex;
@@ -132,6 +116,8 @@ h1, h2, h3, p, li, a, span {
     gap: 5px;
     justify-content: center;
     margin-top: 20px;
+    background: #ffffff !important;
+    border: none !important;
 }
 
 .cover-gallery img {
@@ -142,13 +128,14 @@ h1, h2, h3, p, li, a, span {
 }
 
 /* ============================================
-   Footer – dunkel
+   Footer – jetzt weiß
    ============================================ */
 footer {
     margin-top: 40px;
     font-size: 12px;
-    color: #ccc;
-    background: #333;
+    color: #000000 !important;
+    background: #ffffff !important;
     padding: 10px 0;
     text-align: center;
+    border: none !important;
 }
