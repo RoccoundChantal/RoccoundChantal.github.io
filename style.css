@@ -13,9 +13,10 @@ html, body {
     padding: 0;
 }
 /* Standard-Textfarbe */
-h1, h2, h3, p, li, a, span {
+h1, h2, h3, p, li, span {
     color: #000000 !important;
 }
+
 /* Seitenbreite */
 .page-wrapper {
     max-width: 900px;
