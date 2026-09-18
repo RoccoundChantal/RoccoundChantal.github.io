@@ -1,66 +1,40 @@
-<div id="header"></div>
-<script>
-fetch("header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
-</script>
-
-<div id="header"></div>
-<script>
-fetch("../header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
-</script>
-
-<div id="header"></div>
-
-<script>
-fetch("../header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
-</script>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Englische Songs – Rocco & Chantal</title>
-
-  <link rel="stylesheet" href="../style.css">
-
+    <link rel="stylesheet" href="../style.css">
 </head>
-<h2>Englische Songs</h2>
-
-<ul class="songlist">
-    <li><a href="mp3-Dateien/Abalone spielen wir; Duett_engl.mp3" download>Abalone spielen wir – Duett (englisch)</a></li>
-    <li><a href="mp3-Dateien/Alle Menschen sind bald Brüder_engl.mp3" download>Alle Menschen sind bald Brüder (englisch)</a></li>
-    <li><a href="mp3-Dateien/Am liebsten bin ich glücklich_engl.mp3" download>Am liebsten bin ich glücklich (englisch)</a></li>
-</ul>
 
 <body>
 
-    <nav>
-        <a href="../index.html">Startseite</a>
-        <a href="../Englische-Songs/index.html">Englische Songs</a>
-        <a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a>
-        <a href="../Klassik/index.html">Klassik</a>
-        <a href="../RocknRoll/index.html">Rock’n’Roll</a>
-        <a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a>
-    </nav>
+<!-- HEADER DIREKT EINGEFÜGT -->
+<header>
+    <img src="../start-cover.jpg" alt="Rocco & Chantal Header" class="header-img">
+</header>
 
-    <ul id="songlist"></ul>
+<nav class="main-nav">
+    <ul>
+        <li><a href="../index.html">Startseite</a></li>
+        <li><a href="../Englische-Songs/index.html" class="active">Englische Songs</a></li>
+        <li><a href="../Hoffnungs-Lieder/index.html">Hoffnungs‑Lieder</a></li>
+        <li><a href="../Klassik/index.html">Klassik</a></li>
+        <li><a href="../RocknRoll/index.html">Rock’n’Roll</a></li>
+        <li><a href="../Sonstige-Lieder/index.html">Sonstige Lieder</a></li>
+    </ul>
+</nav>
 
-    <script src="songs.js"></script>
+<h2>Englische Songs</h2>
 
-    <footer>
-        © 2026 Rocco & Chantal
-    </footer>
+<ul class="songlist">
+    <li><a href="../mp3-Dateien/Abalone spielen wir; Duett_engl.mp3" download>Abalone spielen wir – Duett (englisch)</a></li>
+    <li><a href="../mp3-Dateien/Alle Menschen sind bald Brüder_engl.mp3" download>Alle Menschen sind bald Brüder (englisch)</a></li>
+    <li><a href="../mp3-Dateien/Am liebsten bin ich glücklich_engl.mp3" download>Am liebsten bin ich glücklich (englisch)</a></li>
+</ul>
+
+<footer>
+    © 2026 Rocco & Chantal
+</footer>
 
 </body>
 </html>
