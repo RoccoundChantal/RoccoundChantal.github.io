@@ -1,9 +1,12 @@
-/* Kompakte Zeilenhöhe für die gesamte Seite */
+/* ============================================
+   Kompakte Zeilenhöhe
+   ============================================ */
 body, p, li, h1, h2, h3 {
     line-height: 1.3 !important;
 }
+
 /* ============================================
-   GLOBAL – alles weiß, keine Rahmen, einheitliche Schrift
+   GLOBAL – alles weiß, einheitliche Schrift
    ============================================ */
 html, body {
     background-color: #ffffff !important;
@@ -12,6 +15,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 /* Standard-Textfarbe */
 h1, h2, h3, p, li, span {
     color: #000000 !important;
@@ -22,6 +26,7 @@ h1, h2, h3, p, li, span {
     max-width: 900px;
     margin: 0 auto;
 }
+
 /* ============================================
    Header-Bild – ohne graue Box
    ============================================ */
@@ -34,10 +39,15 @@ h1, h2, h3, p, li, span {
     object-fit: cover;
     border-radius: 20px;
 }
+
 /* ============================================
    Navigation – dunkel + gold
    ============================================ */
+.main-nav {
+    margin: 10px 0;
+    background: #ffffff !important; /* Entfernt graue Box */
 }
+
 .main-nav ul {
     list-style: none;
     padding: 0;
@@ -47,9 +57,10 @@ h1, h2, h3, p, li, span {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .main-nav ul li a {
-    background-color: #222;
-    color: #ffd700;
+    background-color: #222 !important;
+    color: #ffd700 !important;
     padding: 8px 12px;
     border-radius: 6px;
     text-decoration: none;
@@ -88,22 +99,29 @@ h1, h2, h3, p, li, span {
     background-color: transparent;
     color: #ffd700 !important;
 }
+
 /* ============================================
-   Willkommen-Box – weiß, keine graue Fläche
+   Willkommen-Box – weiß, kompakt
    ============================================ */
 .content-box {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 5px !important; /* Leerzeile entfernt */
     background: #ffffff !important;
-    padding: 20x;
+    padding: 20px;              /* Tippfehler korrigiert */
     border-radius: 10px;
     border: none !important;
 }
+
+.content-box p {
+    margin-top: 0 !important; /* verhindert zusätzliche Leerzeile */
+}
+
 .content-box h2 {
     color: #000000 !important;
 }
+
 /* ============================================
-   Cover-Galerie – weiß, keine graue Fläche
+   Cover-Galerie – weiß
    ============================================ */
 .cover-gallery {
     display: flex;
@@ -114,13 +132,17 @@ h1, h2, h3, p, li, span {
     background: #ffffff !important;
     border: none !important;
 }
+
 .cover-gallery img {
     width: 220px;
     height: 220px;
     object-fit: cover;
     border-radius: 12px;
 }
-/* Unterseiten komplett weiß */
+
+/* ============================================
+   Unterseiten komplett weiß
+   ============================================ */
 .page-wrapper,
 .content-box,
 footer {
@@ -129,7 +151,7 @@ footer {
 }
 
 /* ============================================
-   Footer – weiß, keine graue Fläche
+   Footer – weiß
    ============================================ */
 footer {
     margin-top: 40px;
